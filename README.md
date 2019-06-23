@@ -17,7 +17,21 @@ This guide will help you step by step to perform the tasks that are necessary to
 ### 1. Run the deployment script to provision your Virtual Assistant and Point of Interest bot
   1. Navigate to https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate and download the VS Virtual Assistant Template. Once downloaded, open the file and proceed with the installation guide.
 
-![Download the Virtual Assistant Template](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VA-VS-template.png)
+     ![Download the Virtual Assistant Template](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VA-VS-template.png)
+     
+  1. Click on the Start menu, search for Visual Studio 2019 and open it. Click on "Create a new project", seach for the Virtual Assistant template 
+  
+     ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
+     
+      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
+
+  1. Under proejct name, input **{YOURMICROSOFTALIAS}**-VirtualAssistant - replace {YOURMICROSOFTALIAS} with your actual Microsoft alias. Tick the checkbox **"Place solution and project in the same directory"**.
+       
+       ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
+       
+       Finally, you should now see all the files and folders required for the Virtual Assistant as shown below:
+
+       ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
   
   1. Click on the Start menu, search for Git and open it. Afterwards, input the following command
 
