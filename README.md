@@ -23,7 +23,6 @@ This guide will help you step by step to perform the tasks that are necessary to
   
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
-      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
 
   1. Under proejct name, input **{YOURMICROSOFTALIAS}**-VirtualAssistant - replace {YOURMICROSOFTALIAS} with your actual Microsoft alias. Tick the checkbox **"Place solution and project in the same directory"**.
        
