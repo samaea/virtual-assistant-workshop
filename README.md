@@ -60,6 +60,6 @@ This guide will help you step by step to perform the tasks that are necessary to
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{{YOURLUISAUTHORINGKEY}}**      
        
        
-       ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
+       ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
        
