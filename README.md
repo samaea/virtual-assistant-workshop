@@ -31,8 +31,30 @@ This guide will help you step by step to perform the tasks that are necessary to
        Finally, you should now see all the files and folders required for the Virtual Assistant as shown below:
 
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
+       
+  1. Before we run the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
-  1. Click on the Start menu, search for Git and open it. Afterwards, input the following command
+  1. **Login in with your lab credentials**.
+  
+       ![LUIS Login Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_0_login.png)
+  
+  1. Click on top right corner, **click on your username's initials** and **click on Settings**. Finally, **take note of the authoring key**.
+  
+       ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_1_settings.png)
+       
+       ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_2_settings.png)
+  
+  1. Click on the Start menu, search for PowerShell 6 and open it. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{{YOURMICROSOFTALIAS}}** with your actual Microsoft alias.
 
-```bash
-
+       ```powershell
+       cd C:\Users\labuser\source\repos\{{YOURMICROSOFTALIAS}}-VirtualAssistant\{{YOURMICROSOFTALIAS}}_VirtualAssistant
+       .\Deployment\Scripts\deploy.ps1 -verbose
+       ```
+       
+  1. Once you executed the above command, you will be prompted to fill out with some information:
+  
+       - Bot Name (used as default name for resource group and deployed resources): **{{YOURMICROSOFTALIAS}}**-VA
+       - Azure resource group region: **westus**
+       - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): h67afqgapd@1jhas
+       - LUIS Authoring Region (westus, westeurope, or australiaeast): westus
+       - LUIS Authoring Key (found at https://luis.ai/user/settings): **{{YOURLUISAUTHORINGKEY}}**      
