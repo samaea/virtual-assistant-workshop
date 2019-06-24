@@ -24,7 +24,7 @@ This guide will help you step by step to perform the tasks that are necessary to
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
 
-  1. Under proejct name, input **{LABUSERNAME}**-VirtualAssistant - replace {LABUSERNAME} with your actual Microsoft alias. Tick the checkbox **"Place solution and project in the same directory"**.
+  1. Under proejct name, input **{LABUSERNAME}**-VirtualAssistant - replace {LABUSERNAME} with your actual Lab User alias. Tick the checkbox **"Place solution and project in the same directory"**.
        
        ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
@@ -44,7 +44,7 @@ This guide will help you step by step to perform the tasks that are necessary to
        
        ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_2_settings.png)
   
-  1. Click on the Start menu, search for PowerShell 6 and open it. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Microsoft alias.
+  1. Click on the Start menu, search for PowerShell 6 and open it. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias.
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VirtualAssistant\{LABUSERNAME}_VirtualAssistant
