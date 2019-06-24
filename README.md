@@ -44,7 +44,13 @@ This guide will help you step by step to perform the tasks that are necessary to
        
        ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_2_settings.png)
   
-  1. Click on the Start menu, search for PowerShell 6 and open it. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias.
+   1. Click on the Start menu, search for PowerShell 6 and open it. Before we can deploy the bot into Azure, we need to first login. Run the command below and login.
+   
+       ```powershell
+       az login
+       ```   
+  
+  1. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias.
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VirtualAssistant\{LABUSERNAME}_VirtualAssistant
