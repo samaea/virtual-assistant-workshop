@@ -74,10 +74,10 @@ This guide will help you step by step to perform the tasks that are necessary to
        
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. **{{TO BE COMPLETED}}
+  1. Click on the Start menu, search for **Git** and open it. **{{TO BE COMPLETED}}**
   
         ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
-   1. **{{TO BE COMPLETED}}
+   1. Navigate back to the PowerShell window **{{TO BE COMPLETED}}
    
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
