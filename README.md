@@ -34,9 +34,15 @@ This guide will help you step by step to perform the tasks that are necessary to
        
   1. Before we run the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
-  1. **Login in with your lab credentials**.
+  1. **Login in with your lab credentials** and follow the setup wizard.
   
        ![LUIS Login Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_0_login.png)
+       
+       ![LUIS Login Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis-aad-permissions.png)
+       
+       ![LUIS Setup Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis-setup-0.png)
+        
+       ![LUIS Setup Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis-setup-1.png)
   
   1. Click on top right corner, **click on your username's initials** and **click on Settings**. Finally, **take note of the authoring key**.
   
