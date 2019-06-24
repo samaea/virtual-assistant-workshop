@@ -58,3 +58,8 @@ This guide will help you step by step to perform the tasks that are necessary to
        - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{{YOURLUISAUTHORINGKEY}}**      
+       
+       
+       ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
+       
+       
