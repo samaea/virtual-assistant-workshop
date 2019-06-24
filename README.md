@@ -55,6 +55,6 @@ This guide will help you step by step to perform the tasks that are necessary to
   
        - Bot Name (used as default name for resource group and deployed resources): **{{YOURMICROSOFTALIAS}}**-VA
        - Azure resource group region: **westus**
-       - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): h67afqgapd@1jhas
-       - LUIS Authoring Region (westus, westeurope, or australiaeast): westus
+       - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
+       - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{{YOURLUISAUTHORINGKEY}}**      
