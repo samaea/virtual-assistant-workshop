@@ -103,10 +103,12 @@ This guide will help you step by step to perform the tasks that are necessary to
       ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
       
   1.  Upon successful completion of the Skill deployment, we will now link our Virtual Assistant bot with the ready-made Point of Interest skill. Navigate to the Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:
-    1. Replace **{LABUSERNAME}** with your actual Lab alias.
+       1. Replace **{LABUSERNAME}** with your actual Lab alias.
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
        botskills connect --botName {LABUSERNAME}-PointofInterestSkill --remoteManifest "http://{LABUSERNAME}-PointofInterestSkill.azurewebsites.net/api/skill/manifest" --luisFolder "C:/Users/labuser/source/repos/botframework-solutions/skills/src/csharp/pointofinterestskill/pointofinterestskill/Deployment/Resources/LU/en/" --cs
        ```
+       
+      ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
         
