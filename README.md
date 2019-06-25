@@ -74,10 +74,31 @@ This guide will help you step by step to perform the tasks that are necessary to
        
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. Click on the Start menu, search for **Git** and open it. **{{TO BE COMPLETED}}**
+  1. Click on the Start menu, search for **Git** and open it.
   
-        ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
+  1. Input the following commands:
+  
+       ```bash
+       cd source/repos
+       git clone https://github.com/microsoft/botframework-solutions
+       ```
+  
+      ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
-   1. Navigate back to the PowerShell window **{{TO BE COMPLETED}}
+  1. Switch back to the PowerShell window and then input the following command to navigate to the Point of Interest Skill we just downloaded via Git.
    
-        ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
+       ```powershell
+       cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
+       .\Deployment\Scripts\deploy.ps1 -verbose
+       ```
+       
+  1.  Once you executed the above command, you will be prompted to fill out with some information:
+  
+       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-PointofInterestSkill
+       - Azure resource group region: **westus**
+       - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
+       - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
+       - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**
+       
+      ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
+        
