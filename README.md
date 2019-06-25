@@ -24,7 +24,7 @@ This guide will help you step by step to perform the tasks that are necessary to
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
 
-  1. Under proejct name, input **{LABUSERNAME}**-VirtualAssistant - replace {LABUSERNAME} with your actual Lab User alias. Tick the checkbox **"Place solution and project in the same directory"**.
+  1. Under proejct name, input **{LABUSERNAME}**-VA - replace {LABUSERNAME} with your actual Lab User alias. Tick the checkbox **"Place solution and project in the same directory"**.
        
        ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
@@ -59,7 +59,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   1. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias.
 
        ```powershell
-       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VirtualAssistant\{LABUSERNAME}_VirtualAssistant
+       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
        
@@ -101,4 +101,12 @@ This guide will help you step by step to perform the tasks that are necessary to
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**
        
       ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
+      
+  1.  Upon successful completion of the Skill deployment, we will now link our Virtual Assistant bot with the ready-made Point of Interest skill. Navigate to the Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:
+    1. Replace **{LABUSERNAME}** with your actual Lab alias.
+  
+       ```powershell
+       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
+       botskills connect --botName {LABUSERNAME}-PointofInterestSkill --remoteManifest "http://{LABUSERNAME}-PointofInterestSkill.azurewebsites.net/api/skill/manifest" --luisFolder "C:/Users/labuser/source/repos/botframework-solutions/skills/src/csharp/pointofinterestskill/pointofinterestskill/Deployment/Resources/LU/en/" --cs
+       ```
         
