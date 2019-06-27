@@ -85,8 +85,12 @@ This guide will help you step by step to perform the tasks that are necessary to
   
       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
-  1. Switch back to the PowerShell window and then input the following command to navigate to the Point of Interest Skill we just downloaded via Git.
+  1. Open another PowerShell window to deploy the second bot in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
+  
+        ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
    
+  1. Input the following command to navigate to the Point of Interest Skill we just downloaded via Git and run the bot deployment script:
+  
        ```powershell
        cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
        .\Deployment\Scripts\deploy.ps1 -verbose
