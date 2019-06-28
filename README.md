@@ -1,5 +1,16 @@
 # Azure Virtual Assistant Workshop
-**{INFO ABOUT WHAT THE LAB WILL CONSIST OF AND WHAT COG SERVICES WILL BE USED}**
+**Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - WORKSHOP**
+The following guide will help you develop your own virtual assistant bot without the need of any code experience. As a result, your bot will be able to perform the following tasks:
+1) 
+2)
+3)
+
+From an arechitectural perspective, the following Azure services are being used:
+- Bot Framework Virtual Assistant Template
+- Azure Cognitive Services:
+  - QnA Maker
+  - LUIS (Language Understanding Intelligent Service)
+  - 
 
 ## Overview & reference architecture of the Virtual Assisant
 Many customers are looking to deliver conversational assistants tailored to their brand, personalized to their customers, and made available across multiple devices and apps. The virtual assistant solution accelerator (in preview) simplifies the creation of your own assistant, enabling you to get started building in minutes. The scope of Virtual Assistant functionality is broad, typically offering end users a range of capabilities. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, developers are provided with initial examples of reusable conversational skills. These Skills can be added into a conversational application to light up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
