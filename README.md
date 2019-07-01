@@ -131,9 +131,10 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**
        
+        ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
+       
    1. {{USER NEEDS TO CONFIGURE POINTOFINTEREST BOT WITH THE AZURE MAPS API KEY. SO USER WILL NEED TO VISIT THE AZURE PORTAL, OPEN THE POINTOFINTEREST RESOURCE GROUP, FIND THE MAPS COG SERVICE RESOURCE, COPY THE KEY UNDER AUTHENTICATION. FINALLY, USER NEEDS TO OPEN TO C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill\AppSettings.json and paste the key in there. Afterwards, user will need to open the Skills.sln solution at C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\, right click on "Point of Interest" project in Visual Studio, click on Publish and then selected the Point of Interest Web app and click publish. Screenshot needed}}
        
-      ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
       
   1.  Upon successful completion of the Skill deployment, we will now link our Virtual Assistant bot with the ready-made Point of Interest skill. Navigate to the Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:
        1. Replace **{LABUSERNAME}** with your actual Lab alias.
