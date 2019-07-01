@@ -22,7 +22,7 @@ Many customers are looking to deliver conversational assistants tailored to thei
 
 ![Virtual Assistant Reference Architecture](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/virtual-assistant-ref-architecture.jpg)
 
-More information about the Virtual Assistant:- https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-virtual-assistant-introduction?view=azure-bot-service-4.0.
+Here you can find more information about the [Virtual Assistant](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-virtual-assistant-introduction?view=azure-bot-service-4.0)
 
 
 ## User Guide  
@@ -50,7 +50,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   
   ```diff
 + Why do we do this?
-The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". In order that these several funtionalities can relate to each other and are well connected, we need to make some manual adjustments and insert information.
++ The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". In order that these several funtionalities can relate to each other and are well connected, we need to make some manual adjustments and insert information.
 ```
 
   
