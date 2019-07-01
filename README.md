@@ -47,14 +47,13 @@ This guide will help you step by step to perform the tasks that are necessary to
 
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
-  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
+  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
   ```diff
 Why do we do this?
 The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
 functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
-In order that these several funtionalities can relate to each other and are well connected, we need to make 
-some manual adjustments and insert information.
+In order that these several funtionalities can relate to each other and are well connected, we need to create Azure resources and insert information.
 ```
 
   
@@ -80,14 +79,14 @@ some manual adjustments and insert information.
        az login
        ```   
   
-  1. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias.
+  1. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias. Make sure to delete the brackets so that you only have your lab username stated. 
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
        
-  1. Once you executed the above command, you will be prompted to fill out with some information:
+  1. Once you executed the above command, you will be prompted to fill out with some information within the powershell window:
   
        - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-VA
        - Azure resource group region: **westus**
@@ -95,7 +94,11 @@ some manual adjustments and insert information.
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**      
        
-       
+```diff
+Why do we do this?
+In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
+```
+
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
   1. Click on the Start menu, search for **Git** and open it.
