@@ -12,7 +12,7 @@ From an arechitectural perspective, the following Azure services are being used:
   - LUIS (Language Understanding Intelligent Service)
   - 
 ```diff
-Before you begin: Please note your LAB CREDENTIALS (username and password). You will need to use it multiple times in the upcoming steps.
++ Before you begin: Please note your LAB CREDENTIALS (username and password). You will need to use it multiple times in the upcoming steps.
 ```
 
 ## Overview & reference architecture of the Virtual Assisant
@@ -49,7 +49,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
   ```diff
-Why do we do this?
++ Why do we do this?
 The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". In order that these several funtionalities can relate to each other and are well connected, we need to make some manual adjustments and insert information.
 ```
 
