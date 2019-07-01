@@ -11,6 +11,9 @@ From an arechitectural perspective, the following Azure services are being used:
   - QnA Maker
   - LUIS (Language Understanding Intelligent Service)
   - 
+```diff
++ Before you begin: Please note your LAB CREDENTIALS (username and password). You will need to use it multiple times in the upcoming steps.
+```
 
 ## Overview & reference architecture of the Virtual Assisant
 Many customers are looking to deliver conversational assistants tailored to their brand, personalized to their customers, and made available across multiple devices and apps. The virtual assistant solution accelerator (in preview) simplifies the creation of your own assistant, enabling you to get started building in minutes. The scope of Virtual Assistant functionality is broad, typically offering end users a range of capabilities. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, developers are provided with initial examples of reusable conversational skills. These Skills can be added into a conversational application to light up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
@@ -26,26 +29,31 @@ More information about the Virtual Assistant:- https://docs.microsoft.com/en-us/
 This guide will help you step by step to perform the tasks that are necessary to create your own Virtual Assistant chatbot. Due to the deployment of a Virtual Assistant or Skill takes around 10 minutes, we will create them both in parallel to save time: a Virtual Assistant and a Point of Interest Skill (remember, a Skill = a Bot, thus you will deploy two bots in total). Later in the lab, we will then join up the Virtual Assistant to your skill (parent and child relationship).
 
 ### 1. Run the deployment script to provision your Virtual Assistant and Point of Interest bot
-  1. Navigate to https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate and download the VS Virtual Assistant Template. Once downloaded, open the file and proceed with the installation guide.
+  1. Navigate to https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate and download the VS Virtual Assistant Template to your desktop (save it). Once downloaded, **double-click on the file and proceed with the installation guide.**
 
      ![Download the Virtual Assistant Template](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VA-VS-template.png)
      
-  1. Click on the Start menu, search for Visual Studio 2019 and open it. Click on "Create a new project", seach for the Virtual Assistant template 
+  1. Click on the Start menu, search for Visual Studio 2019 and open it. Click on "Create a new project", in the search field, type Virtual Assistant Template. 
   
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
 
-  1. Under proejct name, input **{LABUSERNAME}**-VA - replace {LABUSERNAME} with your actual Lab User alias. Tick the checkbox **"Place solution and project in the same directory"**.
+  1. Under project name, input **{LABUSERNAME}**-VA - replace {LABUSERNAME} with your actual Lab User alias. Leave "Location" and "Solution Name" as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
        
        ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
-       Finally, you should now see all the files and folders required for the Virtual Assistant as shown below:
+       You should now see all the files and folders required for the Virtual Assistant as shown below:
 
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
-  1. Before we run the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
+  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order for the script to automatically provision the required LUIS Apps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
-  1. **Login in with your lab credentials** and follow the setup wizard.
+  ```diff
++ Why do we do this?
+```
+The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". In order that these several funtionalities can relate to each other and are well connected, we need to make some manual adjustments and insert information.
+  
+  1. **Sign in in with your lab credentials** and follow the setup wizard.
   
        ![LUIS Login Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_0_login.png)
        
