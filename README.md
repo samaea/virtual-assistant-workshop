@@ -10,7 +10,7 @@ From an arechitectural perspective, the following Azure services are being used:
 - Azure Cognitive Services:
   - QnA Maker
   - LUIS (Language Understanding Intelligent Service)
-  - 
+ 
 ```diff
 Before you begin: Please note your LAB CREDENTIALS (username and password). 
 You will need to use it multiple times in the upcoming steps.
