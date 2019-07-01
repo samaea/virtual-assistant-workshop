@@ -107,7 +107,7 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
   
        ```bash
        cd source/repos
-       git clone https://github.com/microsoft/botframework-solutions
+       git clone https://github.com/samaea/botframework-solutions
        ```
   
       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
