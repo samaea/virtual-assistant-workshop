@@ -53,8 +53,9 @@ This guide will help you step by step to perform the tasks that are necessary to
   ```diff
 + Why do we do this?
 The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
-functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
-In order that these several funtionalities can relate to each other and are well connected, we need to create Azure resources and insert information.
+functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". The commands you will type in
+in the next steps will run the script that automatically deploys different Azure services for specific funtionalities.
+In order that these various funtionalities can relate to each other and are well connected, we need to use Visual Studio, go into the code and insert information.
 ```
 
   
@@ -99,7 +100,7 @@ In order that these several funtionalities can relate to each other and are well
 + Why do we do this?
 In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
 LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, 
-no matter how it is phrased.
+no matter how the sentences are phrased.
 ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
@@ -119,7 +120,7 @@ no matter how it is phrased.
   
         ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
    
-  1. Input the following command to navigate to the Point of Interest Skill we just downloaded via Git and run the bot deployment script:
+  1. **Input the following command to navigate to the Point of Interest Skill** we just downloaded via Git and run the bot deployment script:
   
        ```powershell
        cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
@@ -136,7 +137,10 @@ no matter how it is phrased.
        
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
        
-   1. The Point of Interest Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. The template automates to deploy the POI skill, however we need to insert the Azure Maps API key manually. **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSER-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service with the typ "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
+   1. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. 
+The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
+
+**Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSER-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service with the typ "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
    [SCREENSHOTPLACEHOLDER] 
    
@@ -159,8 +163,8 @@ no matter how it is phrased.
   
 ```diff
 + Why do we do this?
-   You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
-   for your Bot to be able to use Bing Maps to search for locations the user typed in.
+You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
+for your Bot to be able to use Bing Maps to search for locations the user typed in.
    ```
  
   ```diff
@@ -169,6 +173,7 @@ no matter how it is phrased.
        
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+  
        1. Copy the command to your sticky notes/notepad and replace **{LABUSERNAME}** with your Lab credentials. Copy again and insert the command to the PowerShell 6 windows (use one that is already open or open a new window).
   
        ```powershell
