@@ -79,14 +79,14 @@ In order that these several funtionalities can relate to each other and are well
        az login
        ```   
   
-  1. Input the following command to navigate to your Virtual Assistant's folder and deploy the solution into Azure. Replace **{LABUSERNAME}** with your actual Lab User alias. Make sure to delete the brackets so that you only have your lab username stated. 
+  1. Copy the following command and paste it into sticky notes or a notepad. Replace **{LABUSERNAME} with your Credentials** and make sure to delete the bracktets, too. Copy the new command from your notes and input it to PowerShell 6. This will trigger the deployment of the Virtual Assistant solution into Azure.  
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
        
-  1. Once you executed the above command, you will be prompted to fill out with some information within the powershell window:
+  1. Once you executed the above command, you will be prompted to fill out with some information within the PowerShell window:
   
        - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-VA
        - Azure resource group region: **westus**
@@ -96,7 +96,7 @@ In order that these several funtionalities can relate to each other and are well
        
 ```diff
 Why do we do this?
-In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
+In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted. LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, no matter how it is phrased.
 ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
@@ -112,7 +112,7 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
   
       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
-  1. Open another PowerShell window to deploy the second bot in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
+  1. Open a new PowerShell 6 window to deploy the second bot (Point of Interest Skill) in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
         ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
    
@@ -123,7 +123,7 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
        
-  1.  Once you executed the above command, you will be prompted to fill out with some information:
+  1.  Once you executed the above command, you will be prompted to fill out with some information within the window:
   
        - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-PointofInterestSkill
        - Azure resource group region: **westus**
@@ -133,11 +133,39 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
        
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
        
-   1. {{USER NEEDS TO CONFIGURE POINTOFINTEREST BOT WITH THE AZURE MAPS API KEY. SO USER WILL NEED TO VISIT THE AZURE PORTAL, OPEN THE POINTOFINTEREST RESOURCE GROUP, FIND THE MAPS COG SERVICE RESOURCE, COPY THE KEY UNDER AUTHENTICATION. FINALLY, USER NEEDS TO OPEN TO C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill\AppSettings.json and paste the key in there. Afterwards, user will need to open the Skills.sln solution at C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\, right click on "Point of Interest" project in Visual Studio, click on Publish and then selected the Point of Interest Web app and click publish. Screenshot needed}}
+   1. The Point of Interest Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. The template automates to deploy the POI skill, however we need to insert the Azure Maps API key manually. **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSER-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service with the typ "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
+   
+   [SCREENSHOTPLACEHOLDER] 
+   
+   
+   1. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
+   
+   SCREENSHOT
+   
+   1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
+   
+   SCREENSHOT
+   
+   1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
+   
+   SCREENSHOT
+   
+   1. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
+   
+   SCREENSHOT  
+   
+   ```diff
+   Why do we do this?
+   You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill for your Bot to be able to use Bing Maps to search for locations the user typed in.
+   ```
+ 
+  ```diff
+  -    {{USER NEEDS TO CONFIGURE POINTOFINTEREST BOT WITH THE AZURE MAPS API KEY. SO USER WILL NEED TO VISIT THE AZURE PORTAL, OPEN THE POINTOFINTEREST RESOURCE GROUP, FIND THE MAPS COG SERVICE RESOURCE, COPY THE KEY UNDER AUTHENTICATION. FINALLY, USER NEEDS TO OPEN TO C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill\AppSettings.json and paste the key in there. Afterwards, user will need to open the Skills.sln solution at C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\, right click on "Point of Interest" project in Visual Studio, click on Publish and then selected the Point of Interest Web app and click publish. Screenshot needed}}
+   ```
        
       
-  1.  Upon successful completion of the Skill deployment, we will now link our Virtual Assistant bot with the ready-made Point of Interest skill. Navigate to the Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:
-       1. Replace **{LABUSERNAME}** with your actual Lab alias.
+  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+       1. Copy the command to your sticky notes/notepad and replace **{LABUSERNAME}** with your Lab credentials. Copy again and insert the command to the PowerShell 6 windows (use one that is already open or open a new window).
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
