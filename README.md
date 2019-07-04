@@ -12,8 +12,9 @@ From an arechitectural perspective, the following Azure services are being used:
   - LUIS (Language Understanding Intelligent Service)
  
 ```diff
-Before you begin: Please note your LAB CREDENTIALS (username and password). 
-You will need to use it multiple times in the upcoming steps.
++ Before you begin: 
+Please note your LAB CREDENTIALS (username and password). You will need to use it multiple 
+times in the upcoming steps. You can use the sticky notes or a notepad for instance.
 ```
 
 ## Overview & reference architecture of the Virtual Assisant
@@ -50,7 +51,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
   ```diff
-Why do we do this?
++ Why do we do this?
 The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
 functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
 In order that these several funtionalities can relate to each other and are well connected, we need to create Azure resources and insert information.
@@ -95,8 +96,10 @@ In order that these several funtionalities can relate to each other and are well
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**      
        
 ```diff
-Why do we do this?
-In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted. LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, no matter how it is phrased.
++ Why do we do this?
+In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
+LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, 
+no matter how it is phrased.
 ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
@@ -153,10 +156,11 @@ In the backend, the Azure resource "LUIS App" will now be deployed with the info
    1. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
    
    SCREENSHOT  
-   
-   ```diff
-   Why do we do this?
-   You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill for your Bot to be able to use Bing Maps to search for locations the user typed in.
+  
+```diff
++ Why do we do this?
+   You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
+   for your Bot to be able to use Bing Maps to search for locations the user typed in.
    ```
  
   ```diff
