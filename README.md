@@ -140,7 +140,7 @@ no matter how the sentences are phrased.
    1. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. 
 The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
 
-**Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSER-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service with the typ "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
+**Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service with the typ "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
    [SCREENSHOTPLACEHOLDER] 
    
@@ -199,3 +199,32 @@ Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - 
 Screenshot
 
 You can now test the bot within the QnA-Maker Website Dashboard by **clicking on the top right "Test"**, a window will open where you can phrase your question. Be aware that the question you type in has to be equal or very similar (with the same keywords) to the questions that are stated in the FaQ file you just added. The QnA-Maker is not as "intelligent" as you might think to be able to give the answers no matter how you phrase the question. 
+
+## Enablement of Speech 
+The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
+
+  1.  In the Azure Portal, **navigate to the {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA** bot resource.
+  
+          ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-va-resources.png)
+          
+   1.  **Click on Settings** and **tick the checkbox "Enable Streaming Endpoint".
+   
+          ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-streaming-endpoint.png)
+          
+   1. **Navigate back to the resource group** by either clicking on the {LABUSERNAME}-VA link at the top or by clicking on the resource groups icon located to the left of the screen.
+   
+         ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-navigate-to-the-resource-group.png)
+         
+   1. **Click on the {LABUSERNAME}-VA App Service resource** (i.e the Web App)
+   
+         ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-va-resources-app-service.png)
+         
+   1. **Click on Configuration** and then on **General Settings**.
+   
+         ![Azure Portal - App Service Configuration Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-appservice-config.png)
+         
+   1. **Tick the "On" checkbox next to WebSockets**. Afterwards, **click on Save**.
+   
+         ![Azure Portal - App Service Configuration Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-appservice-websockets.png)
+   
+   
