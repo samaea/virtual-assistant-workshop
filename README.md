@@ -182,4 +182,20 @@ for your Bot to be able to use Bing Maps to search for locations the user typed 
        ```
        
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
-        
+     
+     
+ The template created an Azure service called QnA-Maker that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document. 
+ 
+On the GitHub guide you are currently working with, scroll up until you can see the directory and **find the "files" section**. In there, you will find the **word document "MicrosoftReady_FaQ"**. Save this file to your desktop. 
+
+Screenshot
+
+Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. **Open the faq and navigate to "settings" on the top right pane**. 
+
+Screenshot
+
+Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
+
+Screenshot
+
+You can now test the bot within the QnA-Maker Website Dashboard by **clicking on the top right "Test"**, a window will open where you can phrase your question. Be aware that the question you type in has to be equal or very similar (with the same keywords) to the questions that are stated in the FaQ file you just added. The QnA-Maker is not as "intelligent" as you might think to be able to give the answers no matter how you phrase the question. 
