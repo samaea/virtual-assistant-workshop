@@ -312,7 +312,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices-key.png)
    
-  Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application called DL Speech Client to allow us to communicate with your bot over speech.
+        Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application called DL Speech Client to allow us to communicate with your bot over speech.
   
   
    1.  **From outside of the Lab's virtual machine**, using a web browser, **Download** the DL Speech Client by using this link:- https://aka.ms/dlspeechclient. You will need to login using your Microsoft credentials if asked.
