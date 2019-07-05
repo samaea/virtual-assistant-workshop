@@ -201,12 +201,24 @@ Screenshot
 You can now test the bot within the QnA-Maker Website Dashboard by **clicking on the top right "Test"**, a window will open where you can phrase your question. Be aware that the question you type in has to be equal or very similar (with the same keywords) to the questions that are stated in the FaQ file you just added. The QnA-Maker is not as "intelligent" as you might think to be able to give the answers no matter how you phrase the question. 
 
 ## Enablement of Speech 
-The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
+The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our resource group, enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
 
   1.  In the Azure Portal, **navigate to the {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA** bot resource.
   
-          ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-va-resources.png)
+         ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-va-resources.png)
+         
+   1.   **Click on Channels** and **select the DirectLine Speech channel**.
+   
+         ![Azure Portal - Enablement of the Direct Line Speech Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-directlinespeech.png)
+         
+   1.  **Click on Save**.
+   
+         ![Azure Portal - Enablement of the Direct Line Speech Channel - Save](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-directlinespeech-savepng.png)
+         
+   1. **Take note of your Direct Line Speech key as you will need this later on**. You can view this by **clicking on "View"** next to the secret key. Once you have taken note of the key, **click on "Cancel"**.
           
+         ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-directlinespeech-key.png)
+         
    1.  **Click on Settings** and **tick the checkbox "Enable Streaming Endpoint".
    
           ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-streaming-endpoint.png)
@@ -226,5 +238,41 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    1. **Tick the "On" checkbox next to WebSockets**. Afterwards, **click on Save**.
    
          ![Azure Portal - App Service Configuration Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-appservice-websockets.png)
+         
+   1. Now we will deploy Azure Speech Services within our resource group. **Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
+         
+         ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
+         
+   1. **Click on "Create"**.
+   
+         ![Azure Portal - Create Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource-speech.png)
+         
+   1. **Fill in the following information** and then **click on "Save"**:
+   
+       - Name: **SpeechServices**
+       - Subscription: Leave as default.
+       - Location : **westus2** 
+         - **NOTE**: It is important you select **westus2** as this is currently the only supported region that supports DirectLine Speech.
+       - Pricing: **S0**
+       - Resource Group: **{LABUSERNAME}**-VA
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource-speech-2.png)
+         
+   1. **Navigate back to the {{LABUSERNAME}-VA resource group**
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-resourcegroups.png)
+         
+   1.  **Click on the SpeechServices cognitive service resource**.
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices.png)
+      
+   1.  **Click on Keys** and take note of one of the keys. You will need this later on along with the Direct Line Speech key.
+         
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices-key.png)
+   
+  Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application to allow us to communicate with your bot over speech.
+  
+  
+  1.  **Download** 
    
    
