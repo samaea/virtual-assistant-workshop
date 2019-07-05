@@ -154,27 +154,27 @@ The template automates the deployment of the POI skill, however we need to inser
 
  ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
-   7. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
+   1. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
    
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
-   8. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
+   1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
    
         ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
    
-   9. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
+   1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
    
         ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
    
-   10. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
+   1. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
    
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
-```diff
-+ Why do we do this?
-You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
-for your Bot to be able to use Bing Maps to search for locations.
-   ```
+      ```diff
+      + Why do we do this?
+      You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
+      for your Bot to be able to use Bing Maps to search for locations.
+       ```
        
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
