@@ -227,6 +227,15 @@ intent behind a question, LUIS is a good service to work with.
    ![QnA Maker Test](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnatest.png)
 
 
+7. In order to make these changes to the knowledge base effective, we need to publish it as shown in the screenshot, **click on the top pane on publish and then on the publish-button**:
+
+   ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublish.png)
+   
+
+8. You will receive a success message:
+
+   ![FaQ Publish Success](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.png)
+
 PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
 
 ## Enablement of Speech 
