@@ -171,10 +171,6 @@ The template automates the deployment of the POI skill, however we need to inser
 You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
 for your Bot to be able to use Bing Maps to search for locations.
    ```
- 
-  ```diff
-  -    {{USER NEEDS TO CONFIGURE POINTOFINTEREST BOT WITH THE AZURE MAPS API KEY. SO USER WILL NEED TO VISIT THE AZURE PORTAL, OPEN THE POINTOFINTEREST RESOURCE GROUP, FIND THE MAPS COG SERVICE RESOURCE, COPY THE KEY UNDER AUTHENTICATION. FINALLY, USER NEEDS TO OPEN TO C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill\AppSettings.json and paste the key in there. Afterwards, user will need to open the Skills.sln solution at C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\, right click on "Point of Interest" project in Visual Studio, click on Publish and then selected the Point of Interest Web app and click publish. Screenshot needed}}
-   ```
        
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
@@ -202,17 +198,36 @@ Screenshot
       ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
 
 
+
 3. **Open the faq and navigate to "settings" on the top right pane**. 
 
       ![QnA Maker settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasettings.png)
 
 
-Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
 
-      ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasaveandtrain.png)
+4. Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
+
+   ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasaveandtrain.png)
 
 
-You can now test the bot within the QnA-Maker Website Dashboard by **clicking on the top right "Test"**, a window will open where you can phrase your question. Be aware that the question you type in has to be equal or very similar (with the same keywords) to the questions that are stated in the FaQ file you just added. The QnA-Maker is not as "intelligent" as you might think to be able to give the answers no matter how you phrase the question. 
+5. If you click on the top pane on **Edit** and collapse the **Source: custom editorial**, you will find the newly added Source **MicrosoftReadyFaQ** with the questions and answers listed on the right. 
+
+
+```diff
++ Good to know
+Under each stated question is the option " + Add alternative phrasing". QnA-Maker is not fully intelligent by itself and out of the box.
+As soon as a user types in a question, QnA-Maker searches through its knowledge base and based on a probability value it will give back
+the answer with the highest score. However, user phrase their questions not always 1:1 as stated in the knowledge base. If relevant
+keywords are included, chances are high the right anwers will be responded. To add more intelligence and understand the user's real
+intent behind a question, LUIS is a good service to work with. 
+```
+
+6. You can now test your FaQ by clicking on **Test** in the top right pane. Play a bit with rephrasing the questions as seen in the screenshot example
+
+   ![QnA Maker Test](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnatest.png)
+
+
+PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
 
 ## Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our resource group, enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
