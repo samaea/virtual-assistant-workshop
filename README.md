@@ -217,13 +217,14 @@ You will now update the knowledge base with our Microsoft Ready FaQs stated in a
   1.  If you click on the top pane on **Edit** and collapse the **Source: custom editorial**, you will find the newly added Source **MicrosoftReadyFaQ** with the questions and answers listed on the right. 
 
 
-    ```diff
-    + Good to know
+      ```diff
+      + Good to know
+    
       Under each stated question is the option " + Add alternative phrasing". QnA-Maker is not fully intelligent by itself and out of the box.
-    As soon as a user types in a question, QnA-Maker searches through its knowledge base and based on a probability value it will give back
-    the answer with the highest score. However, user phrase their questions not always 1:1 as stated in the knowledge base. If relevant
-    keywords are included, chances are high the right anwers will be responded. To add more intelligence and understand the user's real     intent behind a question, LUIS is a good service to work with. 
-    ```
+      As soon as a user types in a question, QnA-Maker searches through its knowledge base and based on a probability value it will give back
+      the answer with the highest score. However, user phrase their questions not always 1:1 as stated in the knowledge base. If relevant
+      keywords are included, chances are high the right anwers will be responded. To add more intelligence and understand the user's real intent behind a question, LUIS is a good service to work with. 
+      ```
 
   1.  You can now test your FaQ by clicking on **Test** in the top right pane. Play a bit with rephrasing the questions as seen in the screenshot example
 
