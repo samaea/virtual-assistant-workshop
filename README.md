@@ -190,6 +190,8 @@ This guide will help you step by step to perform the tasks that are necessary to
   1. Expand the menu by **clicking on the "ReadyUser{LABUSERNAME}-PointofInterestSkill" folder** and **selecting the "ReadyUser{LABUSERNAME}-PointofInterestSkill"** app service. Finally, **click on Publish**.
   
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-1.png)
+        
+        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-3.png)        
   
       ```diff
       + Why do we do this?
