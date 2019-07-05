@@ -193,52 +193,51 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
 
 You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document: 
  
-1. On the GitHub guide you are currently working with, scroll up until you find the file **Microsoft Ready FaQ**. Save this file to your desktop. 
+  1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested.
+  
+         ![In-Private Edge session](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/e936af27-1cc7-41f3-ab12-14cf3705f140-en.png)
 
-Screenshot
+  1.  Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
 
-2. Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
-
-      ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
-
-
-
-3. **Open the faq and navigate to "settings" on the top right pane**. 
-
-      ![QnA Maker settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasettings.png)
+         ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
 
 
 
-4. Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
+  1.  **Open the faq and navigate to "settings" on the top right pane**. 
 
-   ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasavenandtrain.png)
-
-
-5. If you click on the top pane on **Edit** and collapse the **Source: custom editorial**, you will find the newly added Source **MicrosoftReadyFaQ** with the questions and answers listed on the right. 
+         ![QnA Maker settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasettings.png)
 
 
-```diff
-+ Good to know
-Under each stated question is the option " + Add alternative phrasing". QnA-Maker is not fully intelligent by itself and out of the box.
-As soon as a user types in a question, QnA-Maker searches through its knowledge base and based on a probability value it will give back
-the answer with the highest score. However, user phrase their questions not always 1:1 as stated in the knowledge base. If relevant
-keywords are included, chances are high the right anwers will be responded. To add more intelligence and understand the user's real
-intent behind a question, LUIS is a good service to work with. 
-```
 
-6. You can now test your FaQ by clicking on **Test** in the top right pane. Play a bit with rephrasing the questions as seen in the screenshot example
+  1.  Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
 
-   ![QnA Maker Test](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnatest.png)
+         ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasavenandtrain.png)
 
 
-7. In order to make these changes to the knowledge base effective, we need to publish it as shown in the screenshot, **click on the top pane on publish and then on the publish-button**:
+  1.  If you click on the top pane on **Edit** and collapse the **Source: custom editorial**, you will find the newly added Source **MicrosoftReadyFaQ** with the questions and answers listed on the right. 
 
-   ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublish.png)
+
+    ```diff
+    + Good to know
+      Under each stated question is the option " + Add alternative phrasing". QnA-Maker is not fully intelligent by itself and out of the box.
+    As soon as a user types in a question, QnA-Maker searches through its knowledge base and based on a probability value it will give back
+    the answer with the highest score. However, user phrase their questions not always 1:1 as stated in the knowledge base. If relevant
+    keywords are included, chances are high the right anwers will be responded. To add more intelligence and understand the user's real     intent behind a question, LUIS is a good service to work with. 
+    ```
+
+  1.  You can now test your FaQ by clicking on **Test** in the top right pane. Play a bit with rephrasing the questions as seen in the screenshot example
+
+         ![QnA Maker Test](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnatest.png)
+
+
+  1.  In order to make these changes to the knowledge base effective, we need to publish it as shown in the screenshot, **click on the top pane on publish and then on the publish-button**:
+
+         ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublish.png)
    
 
-8. You will receive a success message:
+  1.  You will receive a success message:
 
-   ![FaQ Publish Success](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.jpg)
+         ![FaQ Publish Success](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.jpg)
 
 PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
 
