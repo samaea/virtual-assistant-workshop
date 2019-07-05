@@ -183,6 +183,14 @@ This guide will help you step by step to perform the tasks that are necessary to
    
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
+  1. A wizard should open up. **Click on "Select Existing"**
+  
+        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish.png)
+        
+  1. Expand the menu by **clicking on the "ReadyUser{LABUSERNAME}-PointofInterestSkill" folder** and **selecting the "ReadyUser{LABUSERNAME}-PointofInterestSkill"** app service. Finally, **click on Publish**.
+  
+        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-1.png)
+  
       ```diff
       + Why do we do this?
       You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
