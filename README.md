@@ -152,19 +152,19 @@ The template automates the deployment of the POI skill, however we need to inser
    
    7. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
    
-   SCREENSHOT
+        ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
    8. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
    
-   SCREENSHOT
+        ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillsln.png)
    
    9. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
    
-   SCREENSHOT
+        ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
    
    10. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
    
-   SCREENSHOT  
+        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
 ```diff
 + Why do we do this?
@@ -197,13 +197,20 @@ You will now update the knowledge base with our Microsoft Ready FaQs stated in a
 
 Screenshot
 
-2. Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. **Open the faq and navigate to "settings" on the top right pane**. 
+2. Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
 
-Screenshot
+      ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
+
+
+3. **Open the faq and navigate to "settings" on the top right pane**. 
+
+      ![QnA Maker settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasettings.png)
+
 
 Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
 
-Screenshot
+      ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasaveandtrain.png)
+
 
 You can now test the bot within the QnA-Maker Website Dashboard by **clicking on the top right "Test"**, a window will open where you can phrase your question. Be aware that the question you type in has to be equal or very similar (with the same keywords) to the questions that are stated in the FaQ file you just added. The QnA-Maker is not as "intelligent" as you might think to be able to give the answers no matter how you phrase the question. 
 
