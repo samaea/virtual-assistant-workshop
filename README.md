@@ -147,12 +147,12 @@ The template automates the deployment of the POI skill, however we need to inser
 
 **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
-   ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.png)
+   ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
    
 **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
  
 
- ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.png)
+ ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
    7. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
    
@@ -211,7 +211,7 @@ Screenshot
 
 4. Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
 
-   ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasaveandtrain.png)
+   ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasavenandtrain.png)
 
 
 5. If you click on the top pane on **Edit** and collapse the **Source: custom editorial**, you will find the newly added Source **MicrosoftReadyFaQ** with the questions and answers listed on the right. 
