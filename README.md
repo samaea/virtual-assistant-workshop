@@ -55,13 +55,13 @@ This guide will help you step by step to perform the tasks that are necessary to
        
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
-  ```diff
-+ Why do we do this?
-The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
-functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". The commands you will type in
-in the next steps will run the script that automatically deploys different Azure services for specific funtionalities.
-In order that these various funtionalities can relate to each other and are well connected, we need to use Visual Studio, go into the code and insert information.
-```
+      ```diff
+        + Why do we do this?
+        The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
+        functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". The commands you will type in
+        in the next steps will run the script that automatically deploys different Azure services for specific funtionalities.
+        In order that these various funtionalities can relate to each other and are well connected, we need to use Visual Studio, go into the code and insert information.
+        ```
 
   
   1. **Sign in in with your lab credentials** and follow the setup wizard.
@@ -315,7 +315,9 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
   Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application called DL Speech Client to allow us to communicate with your bot over speech.
   
   
-   1.  **From outside of the Lab's virtual machine**, using a web browser, **Download** the DL Speech Client by using this link:- https://aka.ms/dlspeechclient. You will need to login using your Microsoft credentials if asked. Afterwards, **click on the "Download" button** located at the top left of the screen.
+   1.  **From outside of the Lab's virtual machine**, using a web browser, **Download** the DL Speech Client by using this link:- https://aka.ms/dlspeechclient. You will need to login using your Microsoft credentials if asked.
+   
+       - **NOTE: This application is for internal Microsoft use only and must not be distributed externally.**
   
    1. Upon successful download of the file, **go to File Explorer** and **click on the "Downloads" folder**. **Right click on the DLSpeechClient.zip file** and **from the dropdown menu, select Extract All**.
   
