@@ -164,6 +164,8 @@ This guide will help you step by step to perform the tasks that are necessary to
         ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
   1. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
+  
+        ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
    
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
