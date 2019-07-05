@@ -229,7 +229,7 @@ intent behind a question, LUIS is a good service to work with.
 
 7. In order to make these changes to the knowledge base effective, we need to publish it as shown in the screenshot, **click on the top pane on publish and then on the publish-button**:
 
-   ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublish.png)
+   ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.png)
    
 
 8. You will receive a success message:
