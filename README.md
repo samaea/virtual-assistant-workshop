@@ -53,7 +53,7 @@ This guide will help you step by step to perform the tasks that are necessary to
 
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
-  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
+  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5**
   
       ```diff
       + Why do we do this?      
@@ -80,7 +80,7 @@ This guide will help you step by step to perform the tasks that are necessary to
        
        ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_2_settings.png)
   
-   1. Click on the Start menu, search for PowerShell 6 and open it. Before we can deploy the bot into Azure, we need to first login. Run the command below and login.
+   1. Click on the Start menu, search for PowerShell 6 and open it. Before we can deploy the bot into Azure, we need to first login. **Run the command below** and login. This will **open a new window**, once the authentication is complete, **switch back** to the PowerShell window to continue.
    
        ```powershell
        az login
@@ -110,7 +110,7 @@ This guide will help you step by step to perform the tasks that are necessary to
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. Click on the Start menu, search for **Git** and open it.
+  1. We are now going to clone the botframework solutions repository that contains of the ready-made Point of Interest skill. Click on the Start menu, search for **Git** and open it.
   
   1. Input the following commands:
   
@@ -118,6 +118,10 @@ This guide will help you step by step to perform the tasks that are necessary to
        cd source/repos
        git clone https://github.com/samaea/botframework-solutions
        ```
+       
+  1. **Please wait** until Git completes cloning the repository otherwise you may face unexpected errors. 
+       
+        - Note: The official Microsoft repository for the Virtual Assistant/Skills template is https://github.com/microsoft/botframework-solutions, but I have copied my own version to ensure updates do not affect this lab.
   
       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
@@ -141,7 +145,10 @@ This guide will help you step by step to perform the tasks that are necessary to
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**
        
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
-       
+  
+  
+  1. **Please wait** until the PowerShell deployment finishes before proceeding otherwise you may face unexpected errors. 
+  
   1. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
      The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
 
