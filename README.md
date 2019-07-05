@@ -242,7 +242,7 @@ This guide will help you step by step to perform the tasks that are necessary to
 
 PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
 
-## 3. Enablement of Speech 
+### 3. Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our resource group, enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
 
   1.  In the Azure Portal, **navigate to the {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA** bot resource.
