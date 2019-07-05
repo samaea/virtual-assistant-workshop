@@ -183,7 +183,7 @@ This guide will help you step by step to perform the tasks that are necessary to
    
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
-  1. A wizard should open up. **Click on "Select Existing"**
+  1. A wizard should open up. **Click on "Select Existing"** and then **Publish**.
   
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish.png)
         
