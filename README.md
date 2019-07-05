@@ -1,15 +1,20 @@
 # Azure Virtual Assistant Workshop
 **Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - WORKSHOP**
 The following guide will help you develop your own virtual assistant bot without the need of any code experience. As a result, your bot will be able to perform the following tasks:
-1) 
-2)
+1) Give you answers to the questions stated in the Microsoft Ready FaQ
+2) Give you answers to Point of Interest questions
 3)
 
 From an arechitectural perspective, the following Azure services are being used:
-- Bot Framework Virtual Assistant Template
-- Azure Cognitive Services:
-  - QnA Maker
-  - LUIS (Language Understanding Intelligent Service)
+- Bot Framework Virtual Assistant Template thats contains the following Azure services:
+  -  Web App
+  -  Cosmos Database
+  -  Storage account
+  -  Azure Cognitive Services:
+    - QnA Maker
+    - LUIS (Language Understanding Intelligent Service)
+    - Azure Search Service
+    - Content Moderator
  
 ```diff
 + Before you begin: 
