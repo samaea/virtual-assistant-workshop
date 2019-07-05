@@ -270,9 +270,36 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices-key.png)
    
-  Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application to allow us to communicate with your bot over speech.
+  Well done - your bot should now be capable of speaking over voice. This could be performed over various different means such as a mobile/desktop app or website for example. For this tutorial, we will be using a desktop application called DL Speech Client to allow us to communicate with your bot over speech.
   
   
-  1.  **Download** 
+   1.  **From outside of the Lab's virtual machine**, using a web browser, **Download** the DL Speech Client by using this link:- https://aka.ms/dlspeechclient. You will need to login using your Microsoft credentials if asked. Afterwards, **click on the "Download" button** located at the top left of the screen.
+  
+   1. Upon successful download of the file, **go to File Explorer** and **click on the "Downloads" folder**. **Right click on the DLSpeechClient.zip file** and **from the dropdown menu, select Extract All**.
+  
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/fileexplorer-extractall.png)
+         
+   1. **Click on Extract** and **ensure** "Show extracted files when complete" is selected.
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/fileexplorer-extract-2.png)
+         
+   1. Another window will open with the extracted files upon completion. **Click on the DLSpeechClient.application** file and if prompted, **click** on Install.
+   
+   1. **Click on the settings** gear icon and **Fill in the following information** and then **click on "Ok"**:
+   
+       - Subscription key: **use the key obtained from step 15**
+       - Subscription key region: **westus2**
+       - User from Id: **Input your name** 
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings.png)
+   
+   1. For the bot secret, **input the key obtained from step 4** and then **click** on Reconnect.
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-2.png)
+   
+   1. Now you can talk to the bot by **clicking** on the microphone symbol.
+   
+         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
+   
    
    
