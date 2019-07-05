@@ -56,12 +56,12 @@ This guide will help you step by step to perform the tasks that are necessary to
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  script to automatically provision the required LUIS Apps. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**.
   
       ```diff
-        + Why do we do this?
-        The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
-        functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". The commands you will type in
-        in the next steps will run the script that automatically deploys different Azure services for specific funtionalities.
-        In order that these various funtionalities can relate to each other and are well connected, we need to use Visual Studio, go into the code and insert information.
-        ```
+      + Why do we do this?      
+      The Virtual Assistant Template helps developers to make use of pre-written code samples to include specific 
+      functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". The commands you will type in
+      in the next steps will run the script that automatically deploys different Azure services for specific funtionalities.
+      In order that these various funtionalities can relate to each other and are well connected, we need to use Visual Studio, go into the code and insert information.      
+      ```
 
   
   1. **Sign in in with your lab credentials** and follow the setup wizard.
