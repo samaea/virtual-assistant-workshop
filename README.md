@@ -3,7 +3,7 @@
 The following guide will help you develop your own virtual assistant bot without the need of any code experience. As a result, your bot will be able to perform the following tasks:
 1) Give you answers to the questions stated in the Microsoft Ready FaQ
 2) Give you answers to Point of Interest questions
-3)
+3) Is reachable over Teams and via Voice
 
 From an arechitectural perspective, the following Azure services are being used:
 - Bot Framework Virtual Assistant Template thats contains the following Azure services:
@@ -150,26 +150,26 @@ The template automates the deployment of the POI skill, however we need to inser
    [SCREENSHOTPLACEHOLDER] 
    
    
-   1. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
+   7. Now open a new **Visual Studio 2019 window** and click on **open a new project** 
    
    SCREENSHOT
    
-   1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
+   8. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
    
    SCREENSHOT
    
-   1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
+   9. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
    
    SCREENSHOT
    
-   1. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
+   10. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
    
    SCREENSHOT  
   
 ```diff
 + Why do we do this?
 You successfully updated the integration of the Azure Maps Key into the Point of Interest Skill 
-for your Bot to be able to use Bing Maps to search for locations the user typed in.
+for your Bot to be able to use Bing Maps to search for locations.
    ```
  
   ```diff
@@ -179,7 +179,7 @@ for your Bot to be able to use Bing Maps to search for locations the user typed 
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
-       1. Copy the command to your sticky notes/notepad and replace **{LABUSERNAME}** with your Lab credentials. Copy again and insert the command to the PowerShell 6 windows (use one that is already open or open a new window).
+       1. Copy the command to your sticky notes/notepad and replace **{LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window).
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
@@ -189,13 +189,15 @@ for your Bot to be able to use Bing Maps to search for locations the user typed 
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
      
- The template created an Azure service called QnA-Maker that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document. 
+The template created an [**Azure service called QnA-Maker**](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview) that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. 
+
+You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document: 
  
-On the GitHub guide you are currently working with, scroll up until you can see the directory and **find the "files" section**. In there, you will find the **word document "MicrosoftReady_FaQ"**. Save this file to your desktop. 
+1. On the GitHub guide you are currently working with, scroll up until you find the file **Microsoft Ready FaQ**. Save this file to your desktop. 
 
 Screenshot
 
-Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. **Open the faq and navigate to "settings" on the top right pane**. 
+2. Navigate in a web browser to **www.qnamaker.ai and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. **Open the faq and navigate to "settings" on the top right pane**. 
 
 Screenshot
 
