@@ -101,12 +101,12 @@ This guide will help you step by step to perform the tasks that are necessary to
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**      
        
-```diff
-+ Why do we do this?
-In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
-LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, 
-no matter how the sentences are phrased.
-```
+      ```diff
+      + Why do we do this?
+      In the backend, the Azure resource "LUIS App" will now be deployed with the information you just inserted.
+      LUIS is our Languange Understanding Intelligence Service that helps recognize the user's intent, 
+      no matter how the sentences are phrased.
+      ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
