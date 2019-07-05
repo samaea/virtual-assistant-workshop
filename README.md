@@ -147,7 +147,9 @@ This guide will help you step by step to perform the tasks that are necessary to
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
   
   
-  1. **Please wait** until the PowerShell deployment finishes before proceeding otherwise you may face unexpected errors. 
+  1. **Please wait** until the both PowerShell deployment windows finishes (i.e the Virtual Agent and the Point of Interest deployment) before proceeding otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
+  
+        ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
   
   1. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
      The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
