@@ -189,9 +189,9 @@ This guide will help you step by step to perform the tasks that are necessary to
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
      
-The template created an [**Azure service called QnA-Maker**](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview) that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. 
+      The template created an [**Azure service called QnA-Maker**](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview) that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. 
 
-You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document: 
+### 2. You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document
  
   1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested.
   
@@ -242,7 +242,7 @@ You will now update the knowledge base with our Microsoft Ready FaQs stated in a
 
 PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
 
-## Enablement of Speech 
+## 3. Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel which procides coordinated access to speech-to-text and text-to-speech from Azure Speech Services that allow bots to become fully voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our resource group, enable the Streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
 
   1.  In the Azure Portal, **navigate to the {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA** bot resource.
