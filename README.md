@@ -257,7 +257,13 @@ This guide will help you step by step to perform the tasks that are necessary to
   1.  In order to make these changes to the knowledge base effective, we need to publish it as shown in the screenshot, **click on the top pane on publish and then on the publish-button**:
 
          ![FaQ Publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublish.png)
-   
+  
+  1. As a final step, we need to update Dispatch to recognise the new FAQ changes. **In PowerShell**, **navigate to the root VA directory (if you are not there already)** and run the botskills refresh command:
+  
+       ```powershell
+       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
+       botskills refresh --cs --verbose
+       ```
 
   1.  You will receive a success message:
 
