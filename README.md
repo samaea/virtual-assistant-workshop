@@ -216,7 +216,7 @@ This guide will help you step by step to perform the tasks that are necessary to
 
 ### 2. You will now update the knowledge base with our Microsoft Ready FaQs stated in a Word document
  
-  1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested.
+  1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested. Click on **Save**.
   
          ![In-Private Edge session](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/e936af27-1cc7-41f3-ab12-14cf3705f140-en.png)
 
@@ -232,7 +232,7 @@ This guide will help you step by step to perform the tasks that are necessary to
 
 
 
-  1.  Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. Click **Saven and train** on the top right.
+  1.  Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. You should find the file under the **Downloads** folder. Click **Save and train** on the top right.
 
          ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasavenandtrain.png)
 
