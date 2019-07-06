@@ -220,7 +220,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   
          ![In-Private Edge session](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/e936af27-1cc7-41f3-ab12-14cf3705f140-en.png)
 
-  1.  Navigate in a web browser to **www.qnamaker.ai**, click on **My Knowledge bases and sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
+  1.  Navigate in a web browser to **www.qnamaker.ai**, click on **My Knowledge bases** and **sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
 
          ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
 
