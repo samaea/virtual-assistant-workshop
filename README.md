@@ -217,8 +217,11 @@ On your computer, **click on the Start menu (Windows Sign)**, search for **Power
        
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
-     
+  1. The above command would have modified some of the local files for the Virtual Assistant which will require publishing back to Azure. Similarly what we did with the PointOfInterest Visual Studio solution, we will do the same for the Virtual Assistant solution. **Switch** to the Visual Studio window that has **ReadyUser{LABUSERNAME}-VA** opened and follow the **Publish** process (i.e identical to what has been performed in steps 15-17, but with the Virtual Assistant solution instead and by **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
+  
+       ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
 
+       ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-4.png) 
 
 ### 2. Azure QnA Maker to update the bot with our Microsoft Ready FaQs 
  
