@@ -206,9 +206,9 @@ On your computer, **click on the Start menu (Windows Sign)**, search for **Power
        ```
        
       
-  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
-       1. Copy the command to your sticky notes/notepad and replace **{LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window).
+Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
@@ -217,7 +217,7 @@ On your computer, **click on the Start menu (Windows Sign)**, search for **Power
        
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
-  1. The above command would have modified some of the local files for the Virtual Assistant which will require publishing back to Azure. Similarly what we did with the PointOfInterest Visual Studio solution, we will do the same for the Virtual Assistant solution. **Switch** to the Visual Studio window that has **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what has been performed in steps 15-17, but this time with the Virtual Assistant solution instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
+  1. The above command made some changes to the code. To reflect these changes for the Virtual Assistant in the cloud, we need to push these updates back to Azure. Similarly what we did with the PointOfInterest Skill solution, we will do the same for the Virtual Assistant solution by using Visual Studio. **Switch** to the Visual Studio window that has your **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what you did in steps 15-17, but **this time with the Virtual Assistant solution** instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
   
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
 
