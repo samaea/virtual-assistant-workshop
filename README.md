@@ -86,7 +86,7 @@ This guide will help you step by step to perform the tasks that are necessary to
   
    1. We will now use PowerShell 6 to log into Azure and create the Virtual Assistant resource. 
    
-On your computer, **click on the Start menu (Windows Sign)**, search for **PowerShell 6 and open it**. Before we can deploy the bot into Azure, we need to first login to Azure. **Run the command below** and login. This will **open a new window**. Once the authentication is complete, **switch back** to the PowerShell window to continue with further commands.
+      On your computer, **click on the Start menu (Windows Sign)**, search for **PowerShell 6 and open it**. Before we can deploy the bot into Azure, we need to first login to Azure. **Run the command below** and login. This will **open a new window**. Once the authentication is complete, **switch back** to the PowerShell window to continue with further commands.
    
        ```powershell
        az login
@@ -208,7 +208,7 @@ On your computer, **click on the Start menu (Windows Sign)**, search for **Power
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
-Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
+      Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
