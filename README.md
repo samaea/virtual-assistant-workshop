@@ -27,7 +27,13 @@ times in the upcoming steps. You can use the sticky notes or a notepad for insta
 
 You will be following this guide and **working on your bot using an Azure Virtual Machine (VM)**. A VM is an emulated computer system created using software. When you start the VM you will see that it looks basically the same as your local desktop. The difference is that it uses physical system resources of the cloud and is isolated to your local computer. With this setting we can provide you with all the tools you need to create the bot without having to download them to your local computer. 
 
-Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM** as you can see in the screenshot below
+Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM** and click **connect**.
+
+      ```diff
+      + Hint      
+      For avoiding switching back and forth between the VM and your opened web browser with this 
+      GitHub guide, copy the URL and open a new web browser window our of your VM.  
+      ```
 
    ![lab user VM](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VM.png)
 
@@ -53,7 +59,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
 
-  1. Under project name, input your unice Lab User name **{LABUSERNAME}**-VA - --> replace {LABUSERNAME} with your actual Lab User alias. **Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
+  1. Under project name, input your unice Lab User name **{LABUSERNAME}-VA** - --> replace {LABUSERNAME} with your actual Lab User alias and **make sure to include "-VA"**. **Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
        
        ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
@@ -116,18 +122,17 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**      
        
       ```diff
-      + Why do we do this?
-      In the backend, the Azure resource "LUIS App", as part of the Virtual Assistant, will now be 
-      deployed with the information you just inserted. LUIS is our Languange Understanding Intelligence 
-      Service that helps recognize the user's intent, 
-      no matter how the sentences are phrased.
+      + Note
+      Note: The official Microsoft repository for the Virtual Assistant/Skills template 
+      is https://github.com/microsoft/botframework-solutions, but I have copied my own version to
+      ensure updates do not affect this lab.
       ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. We are now going to clone the botframework solutions repository that contains of the ready-made Point of Interest skill. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Click on the Start menu, search for **Git** and open it.
+  1. While the Virtual Assistant resource is being created, we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Click on the Start menu, search for **Git** and open it.
   
-  1. Input the following commands:
+  1. Input the following commands. You might need to right-click for copy & paste at this point (short-cut does not work):
   
        ```bash
        cd source/repos
@@ -136,7 +141,13 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        
   1. **Please wait** until Git completes cloning the repository otherwise you may face unexpected errors. 
        
-        - Note: The official Microsoft repository for the Virtual Assistant/Skills template is https://github.com/microsoft/botframework-solutions, but I have copied my own version to ensure updates do not affect this lab.
+              ```diff
+      + Why do we do this?
+      In the backend, the Azure resource "LUIS App", as part of the Virtual Assistant, will now be 
+      deployed with the information you just inserted. LUIS is our Languange Understanding Intelligence 
+      Service that helps recognize the user's intent, 
+      no matter how the sentences are phrased.
+      ```
   
       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
@@ -162,7 +173,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
   
   
-  1. **Please wait** until the both PowerShell deployment windows is finished (i.e the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
+  1. **Please wait** until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
   
         ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
   
@@ -172,12 +183,12 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
    
         ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
    
-       **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
+
  
 
         ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
-  1. Now open a new **Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
+  1. Now open a **new Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
   
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
    
@@ -185,15 +196,15 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
    
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
-  1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln**
+  1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
    
         ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
    
-  1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".**
+  1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".** It should be in line 4.
    
         ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
    
-  1. Now we need to update the changes. In the same window, again on your right, **right click on the PointOfInterestSkill tab and click "Publish".**
+  1. Now we need to update the changes. In the same window, again on your right, **right-click on the PointOfInterestSkill tab and click "Publish".**
    
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
@@ -214,7 +225,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        ```
        
       
-  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant Directory and then run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
       Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
@@ -235,11 +246,11 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
  
 The template created an [**Azure service called QnA-Maker**](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview) that helps to easily insert "Frequently Asked Questions" websites or files for the bot to make use of and be able to give appropriate answers to questions that are stated in these documents. The FaQ files are populated into the QnA-Maker so-called knowledge base. We will now update the QnA Maker with our Microsoft Ready FaQs in a word document.
  
-  1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested. Click on **Save**.
+  1.  Open an In-Private browsing in Microsoft Edge. Download the **Microsoft Ready FaQ** document by navigating to: https://aka.ms/msreadyfaq and input your Microsoft credentials when requested. **Save it to the VM desktop**.
   
          ![In-Private Edge session](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/e936af27-1cc7-41f3-ab12-14cf3705f140-en.png)
 
-  1.  Navigate in a web browser to **www.qnamaker.ai**, click on **My Knowledge bases** and **sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. 
+  1.  Navigate in a web browser to **www.qnamaker.ai**, click on **My Knowledge bases** and **sign in with your lab credentials**. You will find 2 knowledgebases: "faq" and "chitchat" already created by the template. The template comes with some example faq as you can see when clicking on the knowledge base.
 
          ![QnA Maker knowledge bases](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/QnaMakerhome.png)
 
@@ -251,7 +262,7 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
 
 
 
-  1.  Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. You should find the file under the **Downloads** folder. Click **Save and train** on the top right.
+  1.  Now **add the just saved "MicrosoftReady-FaQ" word file via the " + Add file" - Button**. You should find the file where you have saved it - probably on the deskop. Click **Save and train** on the top right.
 
          ![QnA Maker MS Ready FaQ update](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/qnasavenandtrain.png)
 
@@ -283,7 +294,7 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
 
          ![FaQ Publish Success](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.jpg)
 
-  1. As a final step, we need to update your Virtual Assistant's Dispatch to recognise the new QnAMaker FAQ changes. **In PowerShell**, **navigate to the root VA directory (if you are not there already)** and run the botskills refresh command:
+  1. As a final step, we need to update your Virtual Assistant's Dispatch to recognise the new QnAMaker FAQ changes. **In PowerShell**, **navigate to the still opened Virtual Assistant window** (there must be stated: C:\Users\labuser\source\repos\ReadyUser908\ReadyUser908> to be in the right window!) and run the botskills refresh command. **Copy & paste the command and replace the LABUSERNAME with your credentials again**:
   
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
@@ -292,7 +303,7 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
        
         ![BotSkills refresh](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-refresh.png)
 
-PLACEHOLDER FOR CHITCHAT ADJUSTMENTS - NEED TO CHECK WHETHER TIME IS SUFFICIENT
+
 
 ### 3. Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel to provide coordinated access to speech-to-text and text-to-speech functionalities from Azure Speech Services. These allow bots to bring full voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our Azure resource group, enable the streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
@@ -309,7 +320,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    
          ![Azure Portal - Enablement of the Direct Line Speech Channel - Save](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-directlinespeech-savepng.png)
          
-   1. **Note down your Direct Line Speech key as you will need this later on**. You can view this by **clicking on "View"** next to the secret key. Once you have taken note of the key, **click on "Cancel"**.
+   1. **Note down your Direct Line Speech key in your sticky notes/notepad as you will need this later on**. You can view this by **clicking on "View"** next to the secret key. Once you have taken note of the key, **click on "Cancel"**.
           
          ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-directlinespeech-key.png)
          
@@ -319,11 +330,10 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
       
       You have now successfully enabled the Direct Line Speech Channel with only a few clicks. This is
       one of the benefits of the Microsoft Bot Framewok: Developers can easily integrate several functionalities
-      with a few clicks instead of time-consuming coding. [Here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) you can find all the available communication 
-      channels that the bot can be extended to.
+      with a few clicks instead of time-consuming coding.
       ```
 
-   1.  We will now enable the Bot Framework Protocol Streaming Extensions support for optimal, low-latency speech interaction. **Click on Settings** on the left and **tick the checkbox "Enable Streaming Endpoint"**.
+   1.  We will now enable the Bot Framework Protocol Streaming Extensions support for optimal, low-latency speech interaction. In portal.azure.com where you enabled the Speech Channel, right below "Channels" **click on Settings** on the left and **tick the checkbox "Enable Streaming Endpoint"** and **click Saven on the top**.
    
           ![Azure Portal - Resources in the VA RG](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-streaming-endpoint.png)
   
@@ -362,7 +372,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    
 **Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
          
-         ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
+   ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
          
    1. **Click on "Create"**.
    
@@ -372,7 +382,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
 
    1. **Fill in the following information** and then **click on "Save"**:
    
-       - Name: **SpeechServices**
+       - Name: **SpeechServices-{LABUSERNAME}**
        - Subscription: Leave as default.
        - Location : **westus2** 
          - **NOTE**: It is important you select **westus2** as this is currently the only supported region that supports DirectLine Speech.
@@ -407,7 +417,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
      your bot over speech.
        ```
   
-   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download** the DL Speech Client by using this link:- https://aka.ms/dlspeechclient. You will need to login using your Microsoft credentials if asked.
+   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download** the DL Speech Client by using this link: https://aka.ms/dlspeechclient You will need to login using your Microsoft credentials if asked.
    
        - **NOTE: This application is for internal Microsoft use only and must not be distributed externally.**
   
