@@ -153,7 +153,7 @@ no matter how the sentences are phrased.
  
  1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) to deploy the Point of Interest Skill in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
-        ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
+       ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
    
  1. **Input the following command to navigate to the Point of Interest Skill** we just downloaded via Git and run the bot deployment script:
   
@@ -175,48 +175,48 @@ no matter how the sentences are phrased.
   
  1. **Please wait** until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
   
-        ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
+       ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
   
  1. The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
 
        **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
-        ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
+       ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
    
 
  
 
-        ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
+![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
  1. Now open a **new Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
   
-        ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
+       ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
    
  1. Click on **open a new project**.
    
-        ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
+       ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
  1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
    
-        ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
+       ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
    
  1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".** It should be in line 4.
    
-        ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
+       ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
    
  1. Now we need to update the changes. In the same window, again on your right, **right-click on the PointOfInterestSkill tab and click "Publish".**
    
-        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
+       ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
  1. A wizard should open up. **Click on "Select Existing"** and then **Publish**.
   
-        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish.png)
+       ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish.png)
         
  1. Expand the menu by **clicking on the "ReadyUser{LABUSERNAME}-PointofInterestSkill" folder** and **selecting the "ReadyUser{LABUSERNAME}-PointofInterestSkill"** app service. Finally, **click on Publish**.
   
-        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-1.png)
+       ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-1.png)
         
-        ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-3.png)        
+       ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-3.png)        
   
       ```diff
       + Why do we do this?
