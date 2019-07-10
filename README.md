@@ -151,18 +151,18 @@ no matter how the sentences are phrased.
   
    ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
-  1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) to deploy the Point of Interest Skill in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
+ 1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) to deploy the Point of Interest Skill in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
         ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
    
-  1. **Input the following command to navigate to the Point of Interest Skill** we just downloaded via Git and run the bot deployment script:
+ 1. **Input the following command to navigate to the Point of Interest Skill** we just downloaded via Git and run the bot deployment script:
   
        ```powershell
        cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
        
-  1.  Once you executed the above command, you will be prompted to fill out with some information within the window:
+ 1.  Once you executed the above command, you will be prompted to fill out with some information within the window:
   
        - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-PointofInterestSkill
        - Azure resource group region: **westus**
@@ -173,11 +173,11 @@ no matter how the sentences are phrased.
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
   
   
-  1. **Please wait** until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
+ 1. **Please wait** until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
   
         ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
   
-  1. The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
+ 1. The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
 
        **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
@@ -188,31 +188,31 @@ no matter how the sentences are phrased.
 
         ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
-  1. Now open a **new Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
+ 1. Now open a **new Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
   
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
    
-  1. Click on **open a new project**.
+ 1. Click on **open a new project**.
    
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
-  1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
+ 1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
    
         ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
    
-  1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".** It should be in line 4.
+ 1. On the right tab, scroll down until you find the **PointOfInterestSkill** tab. Open **appsettings.json and insert your Azure Maps Key in the code to your left under "azureMapsKey" with the "".** It should be in line 4.
    
         ![Update Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/appsettingsPOI.png)
    
-  1. Now we need to update the changes. In the same window, again on your right, **right-click on the PointOfInterestSkill tab and click "Publish".**
+ 1. Now we need to update the changes. In the same window, again on your right, **right-click on the PointOfInterestSkill tab and click "Publish".**
    
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/POIpublish.png) 
   
-  1. A wizard should open up. **Click on "Select Existing"** and then **Publish**.
+ 1. A wizard should open up. **Click on "Select Existing"** and then **Publish**.
   
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish.png)
         
-  1. Expand the menu by **clicking on the "ReadyUser{LABUSERNAME}-PointofInterestSkill" folder** and **selecting the "ReadyUser{LABUSERNAME}-PointofInterestSkill"** app service. Finally, **click on Publish**.
+ 1. Expand the menu by **clicking on the "ReadyUser{LABUSERNAME}-PointofInterestSkill" folder** and **selecting the "ReadyUser{LABUSERNAME}-PointofInterestSkill"** app service. Finally, **click on Publish**.
   
         ![Point of Interest publish](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-publish-1.png)
         
@@ -225,7 +225,7 @@ no matter how the sentences are phrased.
        ```
        
       
-  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+ 1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
       Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
@@ -236,7 +236,7 @@ no matter how the sentences are phrased.
        
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
-  1. The above command made some changes to the code. To reflect these changes for the Virtual Assistant in the cloud, we need to push these updates back to Azure. Similarly what we did with the PointOfInterest Skill solution, we will do the same for the Virtual Assistant solution by using Visual Studio. **Switch** to the Visual Studio window that has your **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what you did in steps 15-17, but **this time with the Virtual Assistant solution** instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
+ 1. The above command made some changes to the code. To reflect these changes for the Virtual Assistant in the cloud, we need to push these updates back to Azure. Similarly what we did with the PointOfInterest Skill solution, we will do the same for the Virtual Assistant solution by using Visual Studio. **Switch** to the Visual Studio window that has your **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what you did in steps 15-17, but **this time with the Virtual Assistant solution** instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
   
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
 
