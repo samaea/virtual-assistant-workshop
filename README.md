@@ -1,5 +1,5 @@
 # Azure Virtual Assistant Workshop
-**Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - WORKSHOP**
+**Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - Workshop**
 
 The following guide will help you developing step by step your own Virtual Assistant Chatbot without the need of any code experience. We will use the Virtual Assistant template along with the Point of Interest Skill. Due to the deployment taking around 10 minutes, we will create them both in parallel to save time - remember, a Skill = a Bot, thus you will deploy two bots in total. Later in the lab, we will then join up the Virtual Assistant to your skill (parent and child relationship). As a result, your bot will be able to perform the following tasks:
 1) Give you answers to the questions stated in the Microsoft Ready FaQ
@@ -29,11 +29,11 @@ You will be following this guide and **working on your bot using an Azure Virtua
 
 Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM** and click **connect**.
 
-      ```diff
-      + Hint      
-      For avoiding switching back and forth between the VM and your opened web browser with this 
-      GitHub guide, copy the URL and open a new web browser window our of your VM.  
-      ```
+```diff
++ Hint      
+For avoiding switching back and forth between the VM and your opened web browser with this 
+GitHub guide, copy the URL and open a new web browser window our of your VM.  
+```
 
    ![lab user VM](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VM.png)
 
