@@ -1,21 +1,21 @@
 # Azure Virtual Assistant Workshop
 **Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - WORKSHOP**
 
-The following guide will help you step by step to develop your own Virtual Assistant Chatbot without the need of any code experience. Due to the deployment of a Virtual Assistant or Skill takes around 10 minutes, we will create them both in parallel to save time: a Virtual Assistant and a Point of Interest Skill (remember, a Skill = a Bot, thus you will deploy two bots in total). Later in the lab, we will then join up the Virtual Assistant to your skill (parent and child relationship). As a result, your bot will be able to perform the following tasks:
+The following guide will help you developing step by step your own Virtual Assistant Chatbot without the need of any code experience. We will use the Virtual Assistant template along with the Point of Interest Skill. Due to the deployment taking around 10 minutes, we will create them both in parallel to save time - remember, a Skill = a Bot, thus you will deploy two bots in total. Later in the lab, we will then join up the Virtual Assistant to your skill (parent and child relationship). As a result, your bot will be able to perform the following tasks:
 1) Give you answers to the questions stated in the Microsoft Ready FaQ
 2) Give you answers to Point of Interest questions
 3) Is reachable over Teams and via Voice
 
-From an arechitectural perspective, the following Azure services are being used:
+From an architectural perspective, the following Azure services are being used:
 - **Bot Framework Virtual Assistant Template thats contains the following Azure services:**
   -  Web App
   -  Cosmos Database
   -  Storage account
--  **Azure Cognitive Services:**
-    - QnA Maker
-    - LUIS (Language Understanding Intelligent Service)
-    - Azure Search Service
-    - Content Moderator
+  -  **Azure Cognitive Services:**
+      - QnA Maker
+      - LUIS (Language Understanding Intelligent Service)
+      - Azure Search Service
+      - Content Moderator
  
 ```diff
 + Before you begin: 
@@ -25,14 +25,16 @@ times in the upcoming steps. You can use the sticky notes or a notepad for insta
 
 ## Setting the Scene
 
-You will be following this guide and working on your bot using an Azure Virtual Machine (VM). A VM is an emulated computer system created using software. When you start the VM you will see that it look basically the same as your local desktop. The difference is that it uses physical system resources of the cloud and is isolated to your local computer. With this setting we can provide you with all the tools you need to create the bot withough having to download them to your local computer. 
+You will be following this guide and **working on your bot using an Azure Virtual Machine (VM)**. A VM is an emulated computer system created using software. When you start the VM you will see that it looks basically the same as your local desktop. The difference is that it uses physical system resources of the cloud and is isolated to your local computer. With this setting we can provide you with all the tools you need to create the bot without having to download them to your local computer. 
 
-Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM**. 
+Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM** as you can see in the screenshot below
 
-SCREENSHOT
+   ![lab user VM](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VM.png)
 
 ## Overview & reference architecture of the Virtual Assisant
-Many customers are looking to deliver conversational assistants tailored to their brand, personalized to their end customers, and made available across multiple devices and apps. The Virtual Assistant solution accelerator (in preview) simplifies the creation of your own assistant, enabling you to get started developing in minutes. To increase developer productivity and to enable a vibrant ecosystem of reusable conversational experiences, developers are provided with initial examples of reusable conversational skills. These Skills can be added into a conversational application to light up a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
+Many customers are looking to deliver conversational assistants tailored to their brand, personalized to their end customers, and made available across multiple devices and apps. The Virtual Assistant template is a solution accelerator that simplifies the creation of your own assistant, enabling you to get started developing in minutes. To increase developer productivity and to enable the reuse of conversational experiences, developers are provided with initial examples of conversational skills. These Skills can be added into a conversational application (like a chatbot) to enhance a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
+
+In this tutorial we will make use of the Point of Interest Skill.
 
 ![Virtual Assistant Overview](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/virtual-assistant.jpg)
 
