@@ -98,7 +98,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        ![LUIS Settings](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/luis_2_settings.png)
   
   
-   1. We will now use PowerShell 6 to log into Azure and create the Virtual Assistant resource. 
+  1. We will now use PowerShell 6 to log into Azure and create the Virtual Assistant resource. 
    
       On your computer, **click on the Start menu (Windows Sign)**, search for **PowerShell 6 and open it**. Before we can deploy the bot into Azure, we need to first login to Azure. **Run the command below** and login. This will **open a new window**. Once the authentication is complete, **switch back** to the PowerShell window to continue with further commands.
    
@@ -192,7 +192,7 @@ no matter how the sentences are phrased.
   
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/vs-new-window.png)
    
-   1. Click on **open a new project**.
+  1. Click on **open a new project**.
    
         ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
