@@ -453,3 +453,10 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    1. Now you can talk to the bot by **clicking on the microphone symbol.**
    
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
+         
+         
+## 4 Final Wrap Up
+
+You have successfully created your own Virtual Assistant Bot!! WOW! Congrats! This guide will stay publicly available, so if you wish to create a demo for your customer/partner meetings, you can do so by performing the steps within your Microsoft Internal Subscription since the Lab Service will be shut down after MS Ready to avoide costs. 
+
+Worth mentioning: developing a chatbot like you just did within 2 hours, would not be possible with the Azure PaaS Services and templates we were using. This is a huge benefit for the application development teams and accelerate pilots and new projects.
