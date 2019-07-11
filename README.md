@@ -115,7 +115,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        
   1. Once you executed the above command, you will be prompted to fill out with some information within the PowerShell window:
   
-       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-VA
+       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}-VA**
        - Azure resource group region: **westus**
        - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
@@ -164,7 +164,7 @@ no matter how the sentences are phrased.
        
  1.  Once you executed the above command, you will be prompted to fill out with some information within the window:
   
-       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}**-PointofInterestSkill
+       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}-PointofInterestSkill** (case-sensitive!)
        - Azure resource group region: **westus**
        - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
        - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
