@@ -74,9 +74,9 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  Virtual Assistant script. 
   
-This way, it will automatically create the required LUIS Apps in Azure. We need to note this key down for the later steps. 
+     This way, it will automatically create the required LUIS Apps in Azure. We need to note this key down for the later steps. 
 
-Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
+     Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
   
    ```diff
    + Why do we do this?      
@@ -155,11 +155,11 @@ Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck 
    
   1. **Copy the following command and paste it** to your sticky notes or a notepad. 
   
-  **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+     **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
   
-  **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
+     **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
   
-  **Copy the new command from your notes and paste it into the PowerShell 6 window**. The following commands will clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
+     **Copy the new command from your notes and paste it into the PowerShell 6 window**. The following commands will clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
   
        ```powershell
        cd source\repos
