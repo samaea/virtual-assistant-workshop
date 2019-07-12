@@ -411,7 +411,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    
    1. **Tick the "On" checkbox next to WebSockets**. Afterwards, **click on Save**.
    
-      ![Azure Portal - App Service Configuration Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-appservice-websockets.png)
+         ![Azure Portal - App Service Configuration Page](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-appservice-websockets.png)
 
 
       ```diff
@@ -422,9 +422,9 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
   
    1. Now we need to deploy Azure Speech Services within our resource group. This is the Azure resource that will finally give the bot speech functionality. To read more about the Speech Service, find the documentation [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview)
    
-   **Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
+      **Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
          
-   ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
+         ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
          
    1. **Click on "Create"**.
    
