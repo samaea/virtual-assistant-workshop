@@ -144,7 +144,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   1. **Input the following commands** to clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
   
        ```powershell
-       cd source/repos
+       cd source\repos
        git clone https://github.com/samaea/botframework-solutions
        cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
        .\Deployment\Scripts\deploy.ps1 -verbose
