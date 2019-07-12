@@ -316,9 +316,17 @@ We will now activate the Teams Channel so that you can communicate via text mess
    
    ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/channelactivation.png)  
    
-   6. Now you have successfully activated the Teams Channel. **Click on Cancel** and see the Teams Channel with status "Running" in the overview.
+   6. Now you have successfully activated the Teams Channel. **Click on Cancel** and see the Teams Channel with **status "Running"** in the overview.
    
-      ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/termsofservice.png)  
+   7. **Rick-click on the name "Teams Channel"** and **copy the link**.
+   
+      ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/gotochannel.png)  
+      
+   8. You can now chat with your Bot via Teams. For this, you have to swtich to your local desktop by **minimizing the Virtual Machines window**:
+   
+         ![minimizing vm](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/minimizingvm.png)  
+
+   9. On your computer, **open a web browser and paste the just copied Teams Channel Link**. If you have the Teams App installed, it will open up with you Microsoft alias logged in, and you will enter the conversation with your Virtual Assistant Bot. You can now start the conversation with Hi and ask a question from the MS Ready FaQ for instance.
 
 ### 4. OPTIONAL, but cool ;) : Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel to provide coordinated access to speech-to-text and text-to-speech functionalities from Azure Speech Services. These allow bots to bring full voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our Azure resource group, enable the streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
