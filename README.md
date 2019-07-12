@@ -462,10 +462,10 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
    
       ```diff
       + Good to know     
-     Well done - your bot is now be capable of speaking over voice. This could be performed over 
-     various different means, such as a mobile/desktop app or website for example. For this tutorial, 
-     we will be using a desktop application called "DL Speech Client" to allow us to communicate with 
-     your bot over speech.
+      Well done - your bot is now be capable of speaking over voice. This could be performed over 
+      various different means, such as a mobile/desktop app or website for example. For this tutorial, 
+      we will be using a desktop application called "DL Speech Client" to allow us to communicate with 
+      your bot over speech.
        ```
   
    1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
