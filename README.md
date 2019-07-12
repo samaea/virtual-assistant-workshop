@@ -417,9 +417,9 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
      your bot over speech.
        ```
   
-   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
+   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
        
-       - Note for future reference: You can find the source code for DL Speech Client at https://github.com/Azure-Samples/Cognitive-Services-Direct-Line-Speech-Client
+       - Note for future reference: You can find the source code for DL Speech Client [here](https://github.com/Azure-Samples/Cognitive-Services-Direct-Line-Speech-Client). This link can be used for your customers and includes all updates made to the Client.
  
   
    1. Upon successful download of the file, **open the File Explorer** and **click on the "Downloads" folder** to find the just downloaded zip file. **Right click on the DLSpeechClient.zip file** and **from the dropdown menu, select Extract All**.
@@ -436,7 +436,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
  1. Another window will open with the extracted files upon completion. **Open the DLSpeechClient.exe** file.
 
 
-   1. **Click on the settings** gear icon and **Fill in the following information** and then **click on "Ok"**:
+   1. **Click on the settings** gear icon and **Fill in the following information**. You might have to go back to your Virtual Machine to gather the keys from your sticks notes/notepad you saved. Then **click on "Ok"**:
    
        - Subscription key: **use the key obtained from step 15** (Speech Service KEY 1)
        - Subscription key region: **westus2**
@@ -450,9 +450,21 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-2.png)
    
    
-   1. Now you can talk to the bot by **clicking on the microphone symbol.**
+   1. Now you can talk to the bot by **clicking on the microphone symbol.** You can try out with the questions from MS Ready FaQ or the following examples regarding Point of Interest:
    
-         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
+- Get Directions to a Point of Interest:		
+  - What's the fastest way to get to the T-Mobile Arena in Las Vegas?
+  - I need directions to a restaurant
+- Find a Point of Interest
+  - What's nearby?
+	- Are there any pharmacies in town?
+	- Can you recommend an affordable restaurant in Las Vegas
+- Cancel an Active Route
+	- I don't want to go to the shop anymore
+	- Would you cancel my route??
+   
+   
+     ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
          
          
 ## 4 Final Wrap Up
