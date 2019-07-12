@@ -54,7 +54,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
      ![Download the Virtual Assistant Template](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VA-VS-template.png)
      
-  1. Click on the **Start menu, search for Visual Studio 2019** and open it. Click on **"Create a new project"**, in the search field, type **Virtual Assistant Template.** 
+  1. Click on the **Start menu, search for Visual Studio 2019** and open it. You will be asked to sign in, **sign in using your lab credentials**. Click on **"Create a new project"**, in the search field, type **Virtual Assistant Template.** 
   
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
@@ -110,8 +110,18 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
-       .\Deployment\Scripts\deploy.ps1 -verbose
+       .\Deployment\Scripts\deploy.ps1 -verbose -name {LABUSERNAME}-VA -location westus -appPassword h67afqgapd@1jhas -luisAuthoringKey {YOURLUISAUTHORINGKEY} -luisAuthoringRegion westus
        ```
+       
+       #### What do these parameters mean?
+
+       Parameter | Description | Required
+       --------- | ----------- | --------
+       `name` | **Unique** name for your bot. By default this name will be used as the base name for all your Azure Resources and must be unique across Azure. | **Yes**
+       `location` | The region for your Azure Resources. By default, this will be the location for all your Azure Resources | **Yes**
+       `appPassword` | The password for the [Azure Active Directory App](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) that will be used by your bot. It must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character. If using an existing app, this must be the existing password. | **Yes**
+       `luisAuthoringKey` | The authoring key for your LUIS account, which is the one you took note in step 6. | **Yes**
+       `luisAuthoringRegion` | The authoring region of your LUIS account. | **Yes**
        
   1. Once you executed the above command, you will be prompted to fill out with some information within the PowerShell window:
   
