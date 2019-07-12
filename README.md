@@ -121,15 +121,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        `location` | The region for your Azure Resources. By default, this will be the location for all your Azure Resources | **Yes**
        `appPassword` | The password for the [Azure Active Directory App](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) that will be used by your bot. It must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character. If using an existing app, this must be the existing password. | **Yes**
        `luisAuthoringKey` | The authoring key for your LUIS account, which is the one you took note in step 6. | **Yes**
-       `luisAuthoringRegion` | The authoring region of your LUIS account. | **Yes**
-       
-  1. Once you executed the above command, you will be prompted to fill out with some information within the PowerShell window:
-  
-       - Bot Name (used as default name for resource group and deployed resources): **{LABUSERNAME}-VA**
-       - Azure resource group region: **westus**
-       - Password for MSA app registration (must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character): **h67afqgapd@1jhas**
-       - LUIS Authoring Region (westus, westeurope, or australiaeast): **westus**
-       - LUIS Authoring Key (found at https://luis.ai/user/settings): **{YOURLUISAUTHORINGKEY}**      
+       `luisAuthoringRegion` | The authoring region of your LUIS account. | **Yes**   
        
       ```diff
       + Note
