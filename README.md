@@ -62,13 +62,13 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
   1. Under project name, input your unice Lab User name **{LABUSERNAME}-VA** - --> replace {LABUSERNAME} with your actual Lab User alias and **make sure to include "-VA"**. 
   
-**Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
+     **Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
        
-   ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
+     ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
       
       
-   **You should now see all the files and folders required for the Virtual Assistant as shown below:**
+     **You should now see all the files and folders required for the Virtual Assistant as shown below:**
 
    ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
