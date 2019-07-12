@@ -134,7 +134,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        
   1. We are going to **clone the botframework solutions repository** that contains the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Afterwards, we will deploy the Point of Interest Skill in parallel. 
    
-  1. **Input the following commands** to clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
+  1. **Copy the following command and paste it** into sticky notes or a notepad. **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. **Copy the new command from your notes and paste it into the PowerShell 6 window**. The following commands will clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
   
        ```powershell
        cd source\repos
