@@ -291,9 +291,23 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
        
         ![BotSkills refresh](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-refresh.png)
 
+### 3. Enablement of Teams Channel
+
+We will now activate the Teams Channel so that you can communicate via text messaging with your Virtual Assistant Chabot via Teams. 
+
+   1. Open the web browser and navigate to **www.portal.azure.com** and if you are not still logged in, **log in again with your Lab User Credentials**. 
+
+   2. On your left, click on **Resource Groups** and find your **{LABUSERNAME-VA}-Resource Group** to see the related Azure Services. 
+
+   3. **Open the Web App resource** and select **Channels** on the left tab bar. 
+
+   4. Click ont he **Teams icon**. 
 
 
-### 3. Enablement of Speech 
+   ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/teamschannel.png)
+
+
+### 4. OPTIONAL: Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel to provide coordinated access to speech-to-text and text-to-speech functionalities from Azure Speech Services. These allow bots to bring full voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our Azure resource group, enable the streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
 
   1.  In the Azure Portal, **navigate to your {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA Web App Bot Resource**.
