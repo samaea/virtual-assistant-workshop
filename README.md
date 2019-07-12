@@ -122,13 +122,6 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        `appPassword` | The password for the [Azure Active Directory App](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) that will be used by your bot. It must be at least 16 characters long, contain at least 1 special character, and contain at least 1 numeric character. If using an existing app, this must be the existing password. | **Yes**
        `luisAuthoringKey` | The authoring key for your LUIS account, which is the one you took note in step 6. | **Yes**
        `luisAuthoringRegion` | The authoring region of your LUIS account. | **Yes**   
-       
-      ```diff
-      + Note
-      Note: The official Microsoft repository for the Virtual Assistant/Skills template 
-      is https://github.com/microsoft/botframework-solutions, but I have copied my own version to
-      ensure updates do not affect this lab.
-      ```
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
