@@ -172,11 +172,8 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
        ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
-   
 
- 
-
-![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
+       ![Azure Maps Key](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsKey.jpg)
 
   1. Now open a **new Visual Studio 2019 window** by **right clicking on the Visual Studio icon in the taskbar** and clicking on **Visual Studio 2019**. A new window should open.
   
