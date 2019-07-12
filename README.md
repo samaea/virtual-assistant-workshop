@@ -142,7 +142,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. While the Virtual Assistant resource is being created, we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
+  1. While the Virtual Assistant resource is being created, we will deploy in parallel the Point of Interest resource. In the end we have 2 bots/skills (VM and POI). Therefore we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill template**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
       
  
   1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
@@ -422,7 +422,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
   
    1. Now we need to deploy Azure Speech Services within our resource group. This is the Azure resource that will finally give the bot speech functionality. To read more about the Speech Service, find the documentation [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview)
    
-**Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
+   **Click on the "+" symbol** located at the top left of the screen and then **search for "Speech"**.
          
    ![Azure Portal - Create Resource and search for Speech](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-create-resource.png)
          
