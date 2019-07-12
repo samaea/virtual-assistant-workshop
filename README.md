@@ -51,11 +51,13 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
 
 ### 1. Run the deployment script to provision your Virtual Assistant and Point of Interest bot
-  1. Navigate to https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate and download the VS Virtual Assistant Template to your desktop (save it). Once downloaded, go to the solution and **double-click on the file and proceed with the installation guide.**
+  1. Navigate to https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate and download the VS Virtual Assistant Template to your desktop (save it). 
+        
+        Once downloaded, go to the solution and **double-click on the file and proceed with the installation guide.**
 
      ![Download the Virtual Assistant Template](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VA-VS-template.png)
      
-  1. Click on the **Start menu, search for Visual Studio 2019** and open it. You will be asked to sign in, **sign in using your lab credentials** and **leave settings as "general"**. Click on **"Create a new project"**, in the search field, type **Virtual Assistant Template.** 
+  1. Click on the **Start menu, search for Visual Studio 2019** and open it. You will be asked to sign in, **sign in using your lab credentials** and **leave settings as "general"**. Click on **"Create a new project"**, in the search field, type **Virtual Assistant Template.** (If it does not show up in the field, you might have forgot in the previous step to install the downloaded solution.)
   
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
