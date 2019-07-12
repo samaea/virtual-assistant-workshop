@@ -301,13 +301,24 @@ We will now activate the Teams Channel so that you can communicate via text mess
 
    3. **Open the Web App resource** and select **Channels** on the left tab bar. 
 
-   4. Click ont he **Teams icon**. 
-
+   4. Click ont he **Teams icon** and the activation site will open.
+   
+   
 
    ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/teamschannel.png)
 
 
-### 4. OPTIONAL: Enablement of Speech 
+   5. Make sure you are on the "Messaging" window and **click save**. A "Terms of Service" window will open. **Check the box and click ok**.
+   
+   ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/termsofservice.png)  
+   
+   ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/channelactivation.png)  
+   
+   6. Now you have successfully activated the Teams Channel. **Click on Cancel** and see the Teams Channel with status "Running" in the overview.
+   
+      ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/termsofservice.png)  
+
+### 4. OPTIONAL, but cool ;) : Enablement of Speech 
 The Virtual Assistant template creates and deploys an Assistant with all speech enablement steps provided out of the box. However, we will need to enable the Direct Line Speech channel to provide coordinated access to speech-to-text and text-to-speech functionalities from Azure Speech Services. These allow bots to bring full voice in, voice out conversational experiences.  We will also need to deploy Azure Speech Services into our Azure resource group, enable the streaming endpoint on the Bot Service resource and enable WebSockets on our App Service Web App as these are prerequisites of this channel.
 
   1.  In the Azure Portal, **navigate to your {LABUSERNAME}-VA resource group**, **click on the {LABUSERNAME}-VA Web App Bot Resource**.
