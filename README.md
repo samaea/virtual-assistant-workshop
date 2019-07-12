@@ -106,7 +106,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        az login
        ```   
   
-  1. **Copy the following command and paste it** into sticky notes or a notepad. Replace **{LABUSERNAME} with your Credentials** and make sure to delete the bracktets, too. **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.  
+  1. **Copy the following command and paste it** into sticky notes or a notepad. **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
