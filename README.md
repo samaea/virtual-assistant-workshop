@@ -151,7 +151,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        no matter how the sentences are phrased.
        ```
   
-   ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
+       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
  
   1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) to deploy the Point of Interest Skill in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
