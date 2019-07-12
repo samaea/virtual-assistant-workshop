@@ -132,34 +132,20 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
        ![Virtual Assistant - Execute PowerShell script to deploy the bot](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-ps-deploy.png)
        
-  1. While the Virtual Assistant resource is being created, we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Click on the Start menu, search for **Git** and open it.
-  
-  1. Input the following commands. You might need to right-click for copy & paste at this point (short-cut does not work):
-  
-       ```bash
-       cd source/repos
-       git clone https://github.com/samaea/botframework-solutions
-       ```
-       
-  1. **Please wait** until Git completes cloning the repository otherwise you may face unexpected errors. 
-       
-       ```diff
-       + Why do we do this?
-       In the backend, the Azure resource "LUIS App", as part of the Virtual Assistant, will now be 
-       deployed with the information you just inserted. LUIS is our Languange Understanding Intelligence 
-       Service that helps recognize the user's intent, 
-       no matter how the sentences are phrased.
-       ```
-  
-       ![Virtual Assistant - Git console](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-git.png)
+  1. While the Virtual Assistant resource is being created, we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
+      
  
-  1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) to deploy the Point of Interest Skill in parallel by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
+  1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
        ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
+       
+  1. We are going to **clone the botframework solutions repository** that contains the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Afterwards, we will deploy the Point of Interest Skill in parallel. 
    
-  1. **Input the following command to navigate to the Point of Interest Skill** we just downloaded via Git and run the bot deployment script:
+  1. **Input the following commands** to clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
   
        ```powershell
+       cd source/repos
+       git clone https://github.com/samaea/botframework-solutions
        cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
        .\Deployment\Scripts\deploy.ps1 -verbose
        ```
