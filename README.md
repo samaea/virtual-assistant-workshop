@@ -70,7 +70,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
       
      **You should now see all the files and folders required for the Virtual Assistant as shown below:**
 
-   ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
+     ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  Virtual Assistant script. 
   
