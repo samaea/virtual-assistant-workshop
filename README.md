@@ -242,7 +242,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
       
   1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: 
   
-  Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+      Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
       Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
