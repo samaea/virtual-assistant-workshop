@@ -59,7 +59,9 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
      ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-search.png)
      
 
-  1. Under project name, input your unice Lab User name **{LABUSERNAME}-VA** - --> replace {LABUSERNAME} with your actual Lab User alias and **make sure to include "-VA"**. **Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
+  1. Under project name, input your unice Lab User name **{LABUSERNAME}-VA** - --> replace {LABUSERNAME} with your actual Lab User alias and **make sure to include "-VA"**. 
+  
+**Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
        
        ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
@@ -69,7 +71,11 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
-  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  Virtual Assistant script. This way, it will automatically create the required LUIS Apps in Azure. We need to note this key down for the later steps. Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
+  1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  Virtual Assistant script. 
+  
+This way, it will automatically create the required LUIS Apps in Azure. We need to note this key down for the later steps. 
+
+Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
   
       ```diff
       + Why do we do this?      
@@ -100,13 +106,23 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   
   1. We will now use PowerShell 6 to log into Azure and create the Virtual Assistant resource. 
    
-      On your computer, **click on the Start menu (Windows Sign)**, search for **PowerShell 6 and open it**. Before we can deploy the bot into Azure, we need to first login to Azure. **Run the command below** and login. This will **open a new window**. Once the authentication is complete, **switch back** to the PowerShell window to continue with further commands.
+      On your computer, **click on the Start menu (Windows Sign)**, search for **PowerShell 6 and open it**. 
+      
+      Before we can deploy the bot into Azure, we need to first login to Azure. **Run the command below** and login. 
+      
+      This will **open a new window**. Once the authentication is complete, **switch back** to the PowerShell window to continue with further commands.
    
        ```powershell
        az login
        ```   
   
-  1. **Copy the following command and paste it** into sticky notes or a notepad. **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
+  1. **Copy the following command and paste it** to your sticky notes or a notepad. 
+  
+  **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+  
+  **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
+  
+  **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
@@ -132,9 +148,17 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   
        ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
        
-  1. We are going to **clone the botframework solutions repository** that contains the **ready-made Point of Interest skill**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Afterwards, we will deploy the Point of Interest Skill in parallel. 
+  1. We are going to **clone the botframework solutions repository** that contains the **ready-made Point of Interest skill**. 
+  
+  The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare. Afterwards, we will deploy the Point of Interest Skill in parallel. 
    
-  1. **Copy the following command and paste it** into sticky notes or a notepad. **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. **Copy the new command from your notes and paste it into the PowerShell 6 window**. The following commands will clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
+  1. **Copy the following command and paste it** to your sticky notes or a notepad. 
+  
+  **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+  
+  **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
+  
+  **Copy the new command from your notes and paste it into the PowerShell 6 window**. The following commands will clone the botframework solutions repository, navigate to the Point of Interest skill and run the bot deployment script:
   
        ```powershell
        cd source\repos
@@ -156,8 +180,8 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
       ```diff
       + Note
       Note: The official Microsoft repository for the Virtual Assistant/Skills template 
-      is https://github.com/microsoft/botframework-solutions, but I have copied my own version to
-      ensure updates do not affect this lab.
+      is https://github.com/microsoft/botframework-solutions. To ensure updates will not affect this lab, 
+      we have copied an own version.
       ```
        
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
@@ -169,7 +193,11 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   
   1. The template automates the deployment of the POI skill, however we need to insert the Azure Maps API key manually:
 
-       **Navigate to www.portal.azure.com** and log in with your Lab credentials. On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
+       **Navigate to www.portal.azure.com** and log in with your Lab credentials. 
+       
+       On the left, click on **Resource Groups** and find your **{LABUSERNAME}-Pointofinterest Resource Group**. 
+       
+       If you click on it, you will find the Azure services that were deployed with the previous steps we performed. **Search for the Azure service "Azure Maps Account"**. Click on it and find in the left pane **Authentication**. Open and copy the **Primary Key** to your sticky notes/notepad. 
    
        ![Azure Maps Account](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/AzureMapsAccount.jpg)
 
@@ -212,7 +240,9 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        ```
        
       
-  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
+  1.  Up to now, we created two different bots: The Virtual Assistant and the Point of Interest Skill Bot. Since the Virtual Assistant should be able to use the POI skill, we will now link them: 
+  
+  Navigate to the **Virtual Assistant PowerShell 6 window** and then **run the botskills command (below) to join the Virtual Assistant bot with the Point of Interest Skill/Bot:**
   
       Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
@@ -223,7 +253,9 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        
       ![Botskills Connect](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/botskills-connect.png)
      
-  1. The above command made some changes to the code. To reflect these changes for the Virtual Assistant in the cloud, we need to push these updates back to Azure. Similarly what we did with the PointOfInterest Skill solution, we will do the same for the Virtual Assistant solution by using Visual Studio. **Switch** to the Visual Studio window that has your **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what you did in steps 15-17, but **this time with the Virtual Assistant solution** instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
+  1. The above command made some changes to the code. To reflect these changes for the Virtual Assistant in the cloud, we need to push these updates back to Azure. 
+  
+  Similarly what we did with the PointOfInterest Skill solution, we will do the same for the Virtual Assistant solution by using Visual Studio. **Switch** to the Visual Studio window that has your **ReadyUser{LABUSERNAME}-VA** solution opened and follow the **Publish** process (i.e identical to what you did in steps 15-17, but **this time with the Virtual Assistant solution** instead and **selecting ReadyUser{LABUSERNAME}-VA** instead of **ReadyUser{LABUSERNAME}-PointofInterestSkill**.
   
        ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
 
