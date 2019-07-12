@@ -450,14 +450,13 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-resourcegroups.png)
          
  
- 
- 1.  **Click on the "SpeechServices" Cognitive Service resource**.
+   1.  **Click on the "SpeechServices" Cognitive Service resource**.
    
         ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices.png)
       
 
 
-1.  **Click on Keys** and note down KEY 1 on your sticky notes/notepad. You will need this later on along with the Direct Line Speech key you noted down earlier.
+   1.  **Click on Keys** and note down KEY 1 on your sticky notes/notepad. You will need this later on along with the Direct Line Speech key you noted down earlier.
          
        ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/portal-speechservices-key.png)
    
@@ -480,12 +479,12 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/fileexplorer-extractall.png)
          
 
-1. **Click on Extract** and **ensure "Show extracted files when complete" is selected.**
+   1. **Click on Extract** and **ensure "Show extracted files when complete" is selected.**
    
       ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/fileexplorer-extract-2.png)
          
  
- 1. Another window will open with the extracted files upon completion. **Open the DLSpeechClient.exe** file.
+   1. Another window will open with the extracted files upon completion. **Open the DLSpeechClient.exe** file.
 
 
    1. **Click on the settings** gear icon and **Fill in the following information**. You might have to go back to your Virtual Machine to gather the keys from your sticks notes/notepad you saved. Then **click on "Ok"**:
@@ -509,11 +508,11 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
   - I need directions to a restaurant
 - Find a Point of Interest
   - What's nearby?
-	- Are there any pharmacies in town?
-	- Can you recommend an affordable restaurant in Las Vegas
+  - Are there any pharmacies in town?
+  - Can you recommend an affordable restaurant in Las Vegas
 - Cancel an Active Route
-	- I don't want to go to the shop anymore
-	- Would you cancel my route??
+  - I don't want to go to the shop anymore
+  - Would you cancel my route??
    
    
      ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
