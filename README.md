@@ -316,7 +316,7 @@ We will now activate the Teams Channel so that you can communicate via text mess
    
    ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/channelactivation.png)  
    
-   6. Now you have successfully activated the Teams Channel. **Click on Cancel** and see the Teams Channel with **status "Running"** in the overview.
+   6. Now you have successfully activated the Teams Channel. **Click on Cancel** to close the activation panel and see the Teams Channel with **status "Running"** in the overview.
    
    7. **Rick-click on the name "Teams Channel"** and **copy the link**.
    
@@ -490,7 +490,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
      ![Azure Portal - Deploy Speech Services](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechclient-settings-3.png)
          
          
-## 4 Final Wrap Up
+### 4 Final Wrap Up
 
 You have successfully created your own Virtual Assistant Bot!! WOW! Congrats! This guide will stay publicly available, so if you wish to create a demo for your customer/partner meetings, you can do so by performing the steps within your Microsoft Internal Subscription since the Lab Service will be shut down after MS Ready to avoide costs. 
 
