@@ -191,7 +191,9 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
         ![Virtual Assistant - PowerShell deploy VA](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skill-ps-deploy.png)
   
   
-  1. **Please wait** until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment) before proceeding. Otherwise you may face unexpected errors. You will know it is finished when you see an identical output from both deployments:
+  1. **Please wait until both PowerShell deployment windows are finished (the Virtual Agent and the Point of Interest deployment)** before proceeding. Otherwise you may face unexpected errors. 
+  
+      You will know it is finished when you see an identical output from both deployments:
   
        ![Virtual Assistant - PowerShell deployment done](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/powershell-deploydone.png)
   
