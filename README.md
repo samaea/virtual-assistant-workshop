@@ -78,14 +78,14 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
 
      Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
   
-   ```diff
-   + Why do we do this?      
-   The Virtual Assistant Template helps developers to make use of pre-written code samples to include 
-   specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
-   The commands you will type in the next steps will run the script that automatically deploys different 
-   Azure services for specific funtionalities. In order that these various funtionalities can relate to 
-   each other and are well connected, we need to use Visual Studio, go into the code and insert information.      
-   ```
+     ```diff
+     + Why do we do this?      
+     The Virtual Assistant Template helps developers to make use of pre-written code samples to include 
+     specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
+     The commands you will type in the next steps will run the script that automatically deploys different 
+     Azure services for specific funtionalities. In order that these various funtionalities can relate to 
+     each other and are well connected, we need to use Visual Studio, go into the code and insert information.      
+     ```
 
   
   1. **Sign in in with your lab credentials** and follow the setup wizard. You will be promted to acceppt permissions and be directed to the home screen of LUIS. See the screenshots for your reference.
