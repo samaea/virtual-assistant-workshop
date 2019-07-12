@@ -119,11 +119,11 @@ Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck 
   
   1. **Copy the following command and paste it** to your sticky notes or a notepad. 
   
-  **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+      **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
   
-  **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
+      **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
   
-  **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
+      **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
 
        ```powershell
        cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
