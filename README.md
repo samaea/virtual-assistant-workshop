@@ -1,5 +1,5 @@
 # Azure Virtual Assistant Workshop
-**Welcome to the one and only ASPIRE FY20 "WHO RUN THE WORLD? BOTS BOTS" - Workshop**
+**Welcome to the one and only Aspire FY20 "WHO RUN THE WORLD? BOTS BOTS" - Workshop**
 
 The following guide will help you developing step by step your own Virtual Assistant Chatbot without the need of any code experience. We will use the Virtual Assistant template along with the Point of Interest Skill. Due to the deployment taking around 10 minutes, we will create them both in parallel to save time - remember, a Skill = a Bot, thus you will deploy two bots in total. Later in the lab, we will then join up the Virtual Assistant to your skill (parent and child relationship). As a result, your bot will be able to perform the following tasks:
 1) Give you answers to the questions stated in the Microsoft Ready FaQ
@@ -11,6 +11,7 @@ From an architectural perspective, the following Azure services are being used:
   -  Web App
   -  Cosmos Database
   -  Storage account
+  -  App Service
   -  **Azure Cognitive Services:**
       - QnA Maker
       - LUIS (Language Understanding Intelligent Service)
@@ -63,13 +64,13 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   
 **Leave "Location" and "Solution Name"** as is. Tick the checkbox **"Place solution and project in the same directory"**. Click **"Create"**.
        
-       ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
+   ![Virtual Assistant Template Search](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-create.png)
        
       
       
-      **You should now see all the files and folders required for the Virtual Assistant as shown below:**
+   **You should now see all the files and folders required for the Virtual Assistant as shown below:**
 
-       ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
+   ![Virtual Assistant Template Solution](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/va-vs-template-solution.png) 
        
   1. Before we can make use of and the Bot deployment script, we will need to know LUIS' authoring key in order to integrate it into the  Virtual Assistant script. 
   
@@ -77,14 +78,14 @@ This way, it will automatically create the required LUIS Apps in Azure. We need 
 
 Open Microsoft Edge and **navigate to https://www.luis.ai**. **If you are stuck on the "Loading" page** for more than 10 seconds, **refresh the page by clicking on F5 or the refresh button in the web browser**
   
-      ```diff
-      + Why do we do this?      
-      The Virtual Assistant Template helps developers to make use of pre-written code samples to include 
-      specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
-      The commands you will type in the next steps will run the script that automatically deploys different 
-      Azure services for specific funtionalities. In order that these various funtionalities can relate to 
-      each other and are well connected, we need to use Visual Studio, go into the code and insert information.      
-      ```
+   ```diff
+   + Why do we do this?      
+   The Virtual Assistant Template helps developers to make use of pre-written code samples to include 
+   specific functionalities that are common for chatbot scenarios. On the motto "Why reinventing the wheel?". 
+   The commands you will type in the next steps will run the script that automatically deploys different 
+   Azure services for specific funtionalities. In order that these various funtionalities can relate to 
+   each other and are well connected, we need to use Visual Studio, go into the code and insert information.      
+   ```
 
   
   1. **Sign in in with your lab credentials** and follow the setup wizard. You will be promted to acceppt permissions and be directed to the home screen of LUIS. See the screenshots for your reference.
