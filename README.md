@@ -149,7 +149,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
       Therefore we are going to **clone the botframework solutions repository** that contains of the **ready-made Point of Interest skill template**. The Point of Interest (POI) Skill adds the funtionality to the bot to find points of interest and directions, powered by Azure Maps and FourSquare.
       
  
-  1. Open a **new** PowerShell 6 window (right-click on the PowerShell icon in the tab bar to open a new window) by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
+  1. Open a **new** PowerShell 6 window by **right clicking on the PowerShell icon in the taskbar** and clicking on **PowerShell 64 (x64)**.
   
        ![Virtual Assistant - PowerShell deploy POI Skill](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/PowerShell-openanotherwindow.png)
        
