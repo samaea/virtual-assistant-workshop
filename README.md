@@ -217,7 +217,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
    
        ![Visual Studio new project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VSnewproject.png)   
    
-  1. Navigate trough the following path (in the screenshot highlighted in yellow and red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
+  1. Navigate trough the following path (in the screenshot circled in red) to find the Visual Studio solution **Skills.sln** : labuser > source > repos > botframework-solutions > skills > src > csharp > "open skills.sln"
    
        ![Skill.sln project](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/skillssln.png)
    
