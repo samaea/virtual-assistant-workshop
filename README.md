@@ -493,6 +493,8 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          
  
    1. Another window will open with the extracted files upon completion. **Open the DLSpeechClient.exe** file.
+   
+         ![DL Speech exe](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechexe.png)
 
 
    1. **Click on the settings** gear icon and **Fill in the following information**. You might have to go back to your Virtual Machine to gather the keys from your sticks notes/notepad you saved. Then **click on "Ok"**:
