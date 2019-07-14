@@ -474,10 +474,12 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
        your bot over speech.
        ```
   
-   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop**. Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
+   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop** (See the screenshot below for your reference how to do it). Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
        
        - Note for future reference: You can find the source code for DL Speech Client [here](https://github.com/Azure-Samples/Cognitive-Services-Direct-Line-Speech-Client). This link can be used for your customers and includes all updates made to the Client.
- 
+
+          ![minimizingvm](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/minimizingvm.png)
+          
   
    1. Upon successful download of the file, **open the File Explorer** and **click on the "Downloads" folder** to find the just downloaded zip file. **Right click on the DLSpeechClient.zip file** and **from the dropdown menu, select Extract All**.
   
