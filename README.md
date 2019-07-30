@@ -24,19 +24,32 @@ Please note down your LAB CREDENTIALS (username and password). You will need to 
 times in the upcoming steps. You can use the sticky notes or a notepad for instance.
 ```
 
-## Setting the Scene
+## Prerequisites
 
-You will be following this guide and **working on your bot using an Azure Virtual Machine (VM)**. A VM is an emulated computer system created using software. When you start the VM you will see that it looks basically the same as your local desktop. The difference is that it uses physical system resources of the cloud and is isolated to your local computer. With this setting we can provide you with all the tools you need to create the bot without having to download them to your local computer. 
+> It's important to ensure all of the following prerequisites are installed on your machine prior to attempting deployment otherwise you may run into deployment issues.
 
-Please go to **URL** and **sign in with your Lab User credentials**, unique to you. Then **start the VM** and click **connect**.
+1. Download and install Visual Studio (2017 or 2019) for PC or Mac
+1. Download and install the [Virtual Assistant Template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate). *Note that Visual Studio on Mac doesn't support VSIX packages, instead [clone the Skill Template sample from our repository](https://github.com/microsoft/botframework-solutions/tree/master/templates/Skill-Template/csharp/Sample).*
+2. Ensure you have updated [.NET Core](https://www.microsoft.com/net/download) to the **latest** version.  
+3. Download and install [Node Package manager](https://nodejs.org/en/).
+4. Download and install PowerShell Core version 6 (required for cross platform deployment support):
+   * [Download PowerShell Core on Windows](https://aka.ms/getps6-windows)
+   * [Download PowerShell Core on MacOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+   * [Download PowerShell Core on Linux](https://aka.ms/getps6-linux)
+5. Download and install the Bot Framework (CLI) tool dependencies. It's important to do this even if you have earlier versions as the Virtual Assistant makes use of the latest capabilities:
 
-```diff
-+ Hint      
-For avoiding switching back and forth between the VM and your opened web browser with this 
-GitHub guide, copy the URL and open a new web browser window our of your VM.  
-```
+   ```
+   npm install -g botdispatch ludown luis-apis qnamaker luisgen@2.0.2
+   ```
+6. Install Botskills (CLI) tool:
+   
+   ```
+   npm install -g botskills
+   ```
 
-   ![lab user VM](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/VM.png)
+7. Download and install the [Azure Command Line Tools (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest) **(Version 2.0.64 minimum required)**.
+8. Download and install the [Bot Framework Emulator](https://aka.ms/botframework-emulator).
+
 
 ## Overview & reference architecture of the Virtual Assisant
 Many customers are looking to deliver conversational assistants tailored to their brand, personalized to their end customers, and made available across multiple devices and apps. The Virtual Assistant template is a solution accelerator that simplifies the creation of your own assistant, enabling you to get started developing in minutes. To increase developer productivity and to enable the reuse of conversational experiences, developers are provided with initial examples of conversational skills. These Skills can be added into a conversational application (like a chatbot) to enhance a specific conversation experience, such as finding a point of interest, interacting with calendar, tasks, email and many other scenarios. Skills are fully customizable and consist of language models for multiple languages, dialogs and code.
@@ -122,13 +135,15 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   1. **Copy the following command and paste it** to your sticky notes or a notepad. 
   
       **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+      
+      **Replace** **{WINDOWSUSERNAME}** with your Window's login username.
   
       **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
   
       **Copy the new command from your notes and paste it into the PowerShell 6 window**. This will trigger the deployment of the Virtual Assistant solution into Azure.
 
        ```powershell
-       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
+       cd C:\Users\{WINDOWSUSERNAME}\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
        .\Deployment\Scripts\deploy.ps1 -verbose -name {LABUSERNAME}-VA -location westus -appPassword h67afqgapd@1jhas -luisAuthoringKey {YOURLUISAUTHORINGKEY} -luisAuthoringRegion westus
        ```
        
@@ -159,6 +174,8 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
   1. **Copy the following command and paste it** to your sticky notes or a notepad. 
   
      **Replace** **{LABUSERNAME}** with your **lab's username** (e.g. ReadyUser901). 
+     
+     **Replace** **{WINDOWSUSERNAME}** with your Window's login username.
   
      **Replace {YOURLUISAUTHORINGKEY}** with your LUIS authoring key obtained from step 6. 
   
@@ -167,7 +184,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
        ```powershell
        cd source\repos
        git clone https://github.com/samaea/botframework-solutions
-       cd C:\Users\labuser\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
+       cd C:\Users\{WINDOWSUSERNAME}\source\repos\botframework-solutions\skills\src\csharp\pointofinterestskill\pointofinterestskill
        .\Deployment\Scripts\deploy.ps1 -verbose -name {LABUSERNAME}-PointofInterestSkill -location westus -appPassword h67afqgapd@1jhas -luisAuthoringKey {YOURLUISAUTHORINGKEY} -luisAuthoringRegion westus
        ```
        
@@ -253,7 +270,7 @@ Here you can find more information about the [Virtual Assistant](https://docs.mi
       Copy the command to your sticky notes/notepad and **replace {LABUSERNAME}** with your Lab credentials. Copy again and insert the command into the **PowerShell 6 window** (use one that is already open or open a new window). Run the command by hitting "Enter".
   
        ```powershell
-       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
+       cd C:\Users\{WINDOWSUSERNAME}\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA\
        botskills connect --botName {LABUSERNAME}-PointofInterestSkill --remoteManifest "http://{LABUSERNAME}-PointofInterestSkill.azurewebsites.net/api/skill/manifest" --luisFolder "C:/Users/labuser/source/repos/botframework-solutions/skills/src/csharp/pointofinterestskill/pointofinterestskill/Deployment/Resources/LU/en/" --cs
        ```
        
@@ -319,10 +336,10 @@ The template created an [**Azure service called QnA-Maker**](https://docs.micros
 
          ![FaQ Publish Success](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/faqpublishsuccess.jpg)
 
-  1. As a final step, we need to update your Virtual Assistant's Dispatch to recognise the new QnAMaker FAQ changes. **In PowerShell**, **navigate to the still opened Virtual Assistant window** (there must be stated: C:\Users\labuser\source\repos\ReadyUser908\ReadyUser908> to be in the right window!) and run the botskills refresh command. **Copy & paste the command and replace the LABUSERNAME with your credentials again**:
+  1. As a final step, we need to update your Virtual Assistant's Dispatch to recognise the new QnAMaker FAQ changes. **In PowerShell**, **navigate to the still opened Virtual Assistant window** (there must be stated: C:\Users\{WINDOWSUSERNAME}\source\repos\ReadyUser908\ReadyUser908> to be in the right window!) and run the botskills refresh command. **Copy & paste the command and replace the LABUSERNAME with your credentials again**:
   
        ```powershell
-       cd C:\Users\labuser\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
+       cd C:\Users\{WINDOWSUSERNAME}\source\repos\{LABUSERNAME}-VA\{LABUSERNAME}_VA
        botskills refresh --cs --verbose
        ```
        
@@ -357,7 +374,7 @@ We will now activate the Teams Channel so that you can communicate via text mess
    
       ![Teams Channel](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/gotochannel.png)  
       
-   8. You can now chat with your Bot via Teams. For this, you have to swtich to your local desktop by **minimizing the Virtual Machines window**:
+   8. You can now chat with your Bot via Teams. For this, you have to swtich to your local desktop:
    
          ![minimizing vm](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/minimizingvm.png)  
 
@@ -474,7 +491,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
        your bot over speech.
        ```
   
-   1.  **Leave the Virtual Machine by minimizing the window and go back to your desktop** (See the screenshot below for your reference how to do it). Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
+   1.  Open a new web browser window, **Download & Save to your local desktop** the DL Speech Client by using this link: https://github.com/samaea/virtual-assistant-workshop/raw/master/downloads/DLSpeechClient.zip.
        
        - Note for future reference: You can find the source code for DL Speech Client [here](https://github.com/Azure-Samples/Cognitive-Services-Direct-Line-Speech-Client). This link can be used for your customers and includes all updates made to the Client.
 
@@ -497,7 +514,7 @@ The Virtual Assistant template creates and deploys an Assistant with all speech 
          ![DL Speech exe](https://raw.githubusercontent.com/samaea/virtual-assistant-workshop/master/images/dlspeechexe.png)
 
 
-   1. **Click on the settings** gear icon and **Fill in the following information**. You might have to go back to your Virtual Machine to gather the keys from your sticks notes/notepad you saved. Then **click on "Ok"**:
+   1. **Click on the settings** gear icon and **Fill in the following information**. Then **click on "Ok"**:
    
        - Subscription key: **use the key obtained from step 15** (Speech Service KEY 1)
        - Subscription key region: **westus2**
