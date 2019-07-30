@@ -17,12 +17,6 @@ From an architectural perspective, the following Azure services are being used:
       - LUIS (Language Understanding Intelligent Service)
       - Azure Search Service
       - Content Moderator
- 
-```diff
-+ Before you begin: 
-Please note down your LAB CREDENTIALS (username and password). You will need to use it multiple 
-times in the upcoming steps. You can use the sticky notes or a notepad for instance.
-```
 
 ## Prerequisites
 
