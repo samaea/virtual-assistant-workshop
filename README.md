@@ -22,6 +22,7 @@ From an architectural perspective, the following Azure services are being used:
 
 > It's important to ensure all of the following prerequisites are installed on your machine prior to attempting deployment otherwise you may run into deployment issues.
 
+1. An Azure subscription
 1. Download and install Visual Studio (2017 or 2019) for PC or Mac
 1. Download and install the [Virtual Assistant Template](https://marketplace.visualstudio.com/items?itemName=BotBuilder.VirtualAssistantTemplate). *Note that Visual Studio on Mac doesn't support VSIX packages, instead [clone the Skill Template sample from our repository](https://github.com/microsoft/botframework-solutions/tree/master/templates/Skill-Template/csharp/Sample).*
 2. Ensure you have updated [.NET Core](https://www.microsoft.com/net/download) to the **latest** version.  
